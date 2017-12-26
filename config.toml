@@ -2,7 +2,7 @@
 # Hugo configuration
 #
 # Settings that influence Hugo build process and DocDock theme behaviour.
-# 
+#
 
 baseURL = "/"
 languageCode = "en-us"
@@ -38,8 +38,3 @@ name = "<i class='fa fa-git-square'></i> View source"
 identifier = "ds"
 url = "https://source.ind.ie/indienet/docs"
 weight = 20
-
-[[menu.shortcuts]]
-name = "<i class='fa fa-bullhorn'></i> Credits"
-url = "/credits"
-weight = 30
