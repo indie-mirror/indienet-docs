@@ -11,6 +11,9 @@ DefaultContentLanguage = "en"
 title = "Indienet"
 theme = "docdock"
 
+# This allows pages to get the last modified time from git.
+enableGitInfo = "true"
+
 [params]
 editURL = "https://source.ind.ie/indienet/docs/tree/master/content/"
 showVisitedLinks = false # default is false
