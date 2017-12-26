@@ -1,3 +1,8 @@
++++
+title = "Indienet"
+
++++
+
 # Indienet
 
-This is a static Hugo site used to document the development of the Indienet project.
+{{%panel%}}This is a static Hugo site used to document the development of the Indienet project.{{%/panel%}}
