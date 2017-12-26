@@ -1,3 +1,9 @@
+#
+# Hugo configuration
+#
+# Settings that influence Hugo build process and DocDock theme behaviour.
+# 
+
 baseURL = "/"
 languageCode = "en-us"
 DefaultContentLanguage = "en"
@@ -6,8 +12,8 @@ title = "Indienet"
 theme = "docdock"
 
 [params]
-editURL = "https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/"
-showVisitedLinks = true # default is false
+editURL = "https://source.ind.ie/indienet/docs/tree/master/content/"
+showVisitedLinks = false # default is false
 themeStyle = "original" # "original" or "flex" # default "original"
 themeVariant = "" # choose theme variant "green", "gold" , "gray", "blue" (default)
 ordersectionsby = "weight" # ordersectionsby = "title"
@@ -22,20 +28,15 @@ home = [ "HTML", "RSS", "JSON"]
 
 [[menu.shortcuts]]
 pre = "<h3>More</h3>"
-name = "<i class='fa fa-github'></i> Github repo"
-identifier = "ds"
-url = "https://github.com/vjeantet/hugo-theme-docdock"
+name = "<i class='fa fa-heart'></i> Indienet"
+identifier = "indienet"
+url = "https://source.ind.ie/indienet"
 weight = 10
 
 [[menu.shortcuts]]
-name = "<i class='fa fa-camera'></i> Showcases"
-url = "/showcase"
-weight = 11
-
-[[menu.shortcuts]]
-name = "<i class='fa fa-bookmark'></i> Hugo Documentation"
-identifier = "hugodoc"
-url = "https://gohugo.io/"
+name = "<i class='fa fa-git-square'></i> View source"
+identifier = "ds"
+url = "https://source.ind.ie/indienet/docs"
 weight = 20
 
 [[menu.shortcuts]]
