@@ -1,7 +1,11 @@
 +++
 title = "Docs"
 alwaysopen = "true"
+weight = "20"
 +++
+
+<img src='https://source.ind.ie/uploads/-/system/project/avatar/334/Docs_3x.png' width='140' alt='Indienet Docs Logo' style='display: block; margin-left: auto; margin-right: auto;'>
+
 
 This is the documentation for the Docs project itself.
 
