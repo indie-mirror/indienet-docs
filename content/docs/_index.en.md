@@ -41,3 +41,11 @@ git push deploy master
 This will push to the deployment mirror repository on GitHub which will trigger [Netlify](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/) to build it via Hugo and deploy it to [indienet.info](https://indienet.info).
 
 See [netlify.toml](https://source.ind.ie/indienet/docs/blob/master/netlify.toml) for the deployment configuration.
+
+## Multilanguage support
+
+The docs are currently only in English.
+
+This should change shortly as our team in Ghent joins the project.
+
+Both Hugo and this theme support [multilingual development](https://gohugo.io/content-management/multilingual/). The configuration has been set up so that adding support for new languages is seamless and trivial. (Also see the docs for [multilingual development and internationalisation for the Learn Theme](https://learn.netlify.com/en/cont/i18n/) – the DocDock theme is forked from it.)

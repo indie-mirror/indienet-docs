@@ -5,8 +5,9 @@
 #
 
 baseURL = "/"
-languageCode = "en-us"
+# languageCode = "en-us"
 DefaultContentLanguage = "en"
+defaultContentLanguageInSubdir = "false"
 
 title = "Indienet"
 theme = "docdock"
@@ -29,14 +30,23 @@ disableNavChevron = false # set true to hide next/prev chevron, default is false
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 
-[[menu.shortcuts]]
+#
+# You may add other languages here.
+#
+
+[languages]
+[languages.en]
+weight = 1
+languageName = "English"
+
+[[languages.en.menu.shortcuts]]
 pre = "<h3>More</h3>"
 name = "<i class='fa fa-heart'></i> Indienet"
 identifier = "indienet"
 url = "https://source.ind.ie/indienet"
 weight = 10
 
-[[menu.shortcuts]]
+[[languages.en.menu.shortcuts]]
 name = "<i class='fa fa-git-square'></i> View source"
 identifier = "ds"
 url = "https://source.ind.ie/indienet/docs"
