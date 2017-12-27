@@ -1,51 +1,8 @@
 +++
 title = "Docs"
-
+alwaysopen = "true"
 +++
 
-This is the documentation on the documentation project (this). Very meta.
+This is the documentation for the Docs project itself.
 
-## Process
-
-The Docs project is used both for planning artefacts and to document the various projects under the Indienet banner as they are developed.
-
-## Development
-
-Docs is built using [Hugo](https://gohugo.io). See the Hugo [quick start guide](https://gohugo.io/getting-started/quick-start/) to install Hugo on your system.
-
-We use [our fork](https://github.com/aral/hugo-theme-docdock) of the [Hugo DocDock Theme](http://docdock.netlify.com/). The fork currently fixes [an issue with search highlighting breaking in Mermaid sequence diagrams](https://github.com/vjeantet/hugo-theme-docdock/issues/112)). (The fix [has now been merged into master](https://github.com/vjeantet/hugo-theme-docdock/pull/113).)
-
-To contribute to the project, team members should [fork the repository on source.ind.ie](https://source.ind.ie/indienet/docs) and submit merge requests.
-
-## Installation
-
-1. Clone the repository
-2. Install the theme (`git submodule update --init`)
-
-## Running
-
-```bash
-hugo server -D
-```
-
-(This will run a local dev server and locally publish the site, including drafts.)
-
-## Deployment
-
-If you have deployment privileges, you can deploy via Git:
-
-```bash
-git push deploy master
-```
-
-This will push to the deployment mirror repository on GitHub which will trigger [Netlify](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/) to build it via Hugo and deploy it to [indienet.info](https://indienet.info).
-
-See [netlify.toml](https://source.ind.ie/indienet/docs/blob/master/netlify.toml) for the deployment configuration.
-
-## Multilanguage support
-
-The docs are currently only in English.
-
-This should change shortly as our team in Ghent joins the project.
-
-Both Hugo and this theme support [multilingual development](https://gohugo.io/content-management/multilingual/). The configuration has been set up so that adding support for new languages is seamless and trivial. (Also see the docs for [multilingual development and internationalisation for the Learn Theme](https://learn.netlify.com/en/cont/i18n/) – the DocDock theme is forked from it.)
+The Docs project is used to document the various Indienet projects as they are being developed. Depending on the stage of development, it will contain planning artefacts, development documentation, and usage documentation.
