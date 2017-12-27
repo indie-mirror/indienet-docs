@@ -4,7 +4,7 @@
 # Settings that influence Hugo build process and DocDock theme behaviour.
 #
 
-baseURL = "/"
+baseURL = ""
 # languageCode = "en-us"
 DefaultContentLanguage = "en"
 defaultContentLanguageInSubdir = "false"
