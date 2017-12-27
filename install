@@ -1,0 +1,8 @@
+#!/bin/sh
+set -e
+
+# Set the deployment remote
+git remote add deploy git@github.com:indie-mirror/indienet-docs.git
+
+# Initialise and update the theme (git submodule)
+git submodule update --init
