@@ -8,6 +8,6 @@ weight = "10"
 
 [ActivityPub](https://www.w3.org/TR/activitypub/) implementation in JavaScript (ES6) for use in Indienet apps and sites.
 
-Indienet apps are federated web apps (or sites) that are built for use by a single person.
+Indienet apps are federated personal web apps (or sites) that are built for use by a single person.
 
 {{% children  %}}
