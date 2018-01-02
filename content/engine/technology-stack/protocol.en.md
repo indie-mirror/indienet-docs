@@ -16,3 +16,8 @@ As of the time of this writing, Mastodon alone had over 1M active accounts sprea
 <iframe src="https://lou.lt/@mastodonusercount/99252518927131758/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="600"></iframe><script src="https://lou.lt/embed.js" async="async"></script>
 
 A major goal of our project is to raise the number of ActivityPub instances by at least an order of magnitude as Indienet apps are, by definition, instances of one.
+
+### Resources
+
+  * [jsonld.js](https://github.com/digitalbazaar/jsonld.js): “This library is an implementation of the JSON-LD specification in JavaScript.”
+  * [See Radar](../../../radar) for links to other ActivityPub implementations.
