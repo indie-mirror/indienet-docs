@@ -30,3 +30,12 @@ sequenceDiagram
   B->>D: delivery
   B->>E: delivery
 {{< /mermaid >}}
+
+## Setup
+
+An installation must be configurable to set:
+
+  * The domain that it runs on (this is the domain that will act as the ActivityPub server)
+  * Account details of the owner (name, description, photo)
+
+This configuration will have to be carried out automatically for seamless deployments (to be designed).
