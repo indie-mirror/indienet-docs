@@ -1,0 +1,32 @@
++++
+title = "Design"
+weight = "10"
++++
+
+The Indienet Engine is a loosely-coupled ActivityPub component in JavaScript that handles the following features via REST and WebSocket APIs and a realtime RethinkDB database (see [technology stack](../technology-stack)):
+
+  * [ ] Authentication
+  * [ ] Server-to-server interactions
+  * [ ] Client-to-server interactions
+
+{{<mermaid align="left">}}
+sequenceDiagram
+  participant A as AP Server
+  participant B as Engine
+  participant C as Database
+  participant D as AP Server
+  participant E as Client
+
+  A->>B: delivery
+  B->>C: persistence
+  B->>D: delivery
+  D->>B: delivery
+  E->>B: publickey authentication request
+  B->>E: Authentication OK (JWT token)
+  E->>B: new message
+  B->>C: persistence
+  C->>B: event
+  B->>A: delivery
+  B->>D: delivery
+  B->>E: delivery
+{{< /mermaid >}}

@@ -1,6 +1,6 @@
 +++
 title = "Security"
-weight = "20"
+weight = "30"
 +++
 
 Indienet apps based on Indienet Engine are hosted on a server and accessed through clients. The default client is a web client that is, itself, served by the server.
@@ -21,7 +21,7 @@ Just like any web app, this means that we must trust the host not to:
   1. Add a back door to the source and serve a malicious client (with which they could, for example, capture your password, etc.)
   2. Not to update to a malicious version sometime in the future (a web server could serve you a different client on each connection)
 
-While these issues are blatantly apparent for web clients, they are also faced by native apps today in a world of App Stores and automatic updates. 
+While these issues are blatantly apparent for web clients, they are also faced by native apps today in a world of App Stores and automatic updates.
 
 ## Resources
 
