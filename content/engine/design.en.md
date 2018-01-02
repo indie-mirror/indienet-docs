@@ -3,7 +3,7 @@ title = "Design"
 weight = "10"
 +++
 
-The Indienet Engine is a loosely-coupled ActivityPub component in JavaScript that handles the following features via REST and WebSocket APIs and a realtime RethinkDB database (see [technology stack](../technology-stack)):
+The Indienet Engine is a loosely-coupled ActivityPub component in JavaScript (Node.js) that handles the following features via REST and WebSocket APIs and a realtime RethinkDB database (see [technology stack](../technology-stack)):
 
   * [ ] Authentication
   * [ ] Server-to-server interactions
