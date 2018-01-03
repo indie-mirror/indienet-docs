@@ -1,6 +1,5 @@
 +++
 title = "Indienet Docs"
-
 +++
 
 # Indienet Docs
