@@ -17,7 +17,14 @@ As of the time of this writing, Mastodon alone had over 1M active accounts sprea
 
 A major goal of our project is to raise the number of ActivityPub instances by at least an order of magnitude as Indienet apps are, by definition, instances of one.
 
+### Gotchas
+
+  * Note: if we want to federate with Mastodon (we do), we must also implement WebFinger as Mastodon doesn’t accept Actor objects without a WebFinger. Discussion: https://github.com/w3c/activitypub/issues/194
+
 ### Resources
 
+  * [ActivityStreams 2.0 implementation in JavaScript](https://github.com/aral/activitystrea.ms)
+
   * [jsonld.js](https://github.com/digitalbazaar/jsonld.js): “This library is an implementation of the JSON-LD specification in JavaScript.”
+
   * [See Radar](../../../radar) for links to other ActivityPub implementations.
