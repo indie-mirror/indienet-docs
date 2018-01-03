@@ -17,6 +17,42 @@ Explore ActivityPub implementation and interoperability (e.g., with Mastodon) fo
 
 https://source.ind.ie/indienet/spikes/activitypub
 
+## To-Dos
+
+### Key
+
+  * **[AP-n.i]**: Section n, subsection i in W3C ActivityPub spec.
+  * **[AS-n.i]**: Section n, subsection i in W3C Activity Streams spec.
+
+### List
+
+  1. [x] Respond with hardcoded Actor object [AP-4]
+  2. [x] Send WebFinger Link header in 1. [Not in AP spec]
+  3. [x] Respond with hardcoded WebFinger request [Not in AP spec]
+
+## Notes
+
+### Perceived behaviour from Mastodon interactions
+
+#### Initial actor request flow
+
+Source: https://source.ind.ie/indienet/spikes/activitypub/blob/master/src/app.js
+
+  1. **Actor request:** expects actor object + HTTP Link header to be set pointing to WebFinger endpoint.
+
+    Sample Link header:
+    ```
+    <https://dhobqcaxam.localtunnel.me/.well-known/webfinger?resource=acct%3Aaral%40dhobqcaxam.localtunnel.me>; rel="lrdd"; type="application/xrd+xml", <https://dhobqcaxam.localtunnel.me>; rel="alternate"; type="application/activity+json"
+    ```
+
+  2. **WebFinger request:** Expects WebFinger map from `resource` sepcified in the WebFinger URL in the Link header in 1 with a map to the `id` (url) specified in the Actor object in 1.
+
+  3. Outbox request
+
+  4. Following request
+
+  5. Followers request
+
 ## Issues
 
 ### Personal Site Identifier Syntax Simplification
