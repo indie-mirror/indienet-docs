@@ -29,8 +29,18 @@ https://source.ind.ie/indienet/spikes/activitypub
   1. [x] Respond with hardcoded Actor object [AP-4]
   2. [x] Send WebFinger Link header in 1. [Not in AP spec]
   3. [x] Respond with hardcoded WebFinger request [Not in AP spec]
+  4. [ ] Mock Outbox
+  5. [ ] Respond to Follow requests **in progress**
+  6. [ ] Mock Followers
+  7. [ ] Mock Following
 
 ## Notes
+
+### ActivityPub-Mock
+
+Evan Prodromou has just created a project to help unit test ActivityPub implementations. This looks very useful for our use case.
+
+https://gitlab.com/aral/activitypub-mock
 
 ### Perceived behaviour from Mastodon interactions
 
@@ -52,6 +62,10 @@ Source: https://source.ind.ie/indienet/spikes/activitypub/blob/master/src/app.js
   4. Following request
 
   5. Followers request
+
+#### Follow request receipt
+
+  1. **Inbox request**: Follow action
 
 ## Issues
 
