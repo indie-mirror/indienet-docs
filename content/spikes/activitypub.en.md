@@ -52,6 +52,10 @@ app.use(express.json({type: ['application/json', 'application/activity+json', 'a
 
 Note: Mastodon uses the `application/activity+json` content type (which is _should_ not _must_ in the spec. Supporting both is the safest route.)
 
+### FeathersJS Notes
+
+  * **It’s currently not possible to mount a Feathers service at root.** See my comment on https://github.com/feathersjs/feathers/issues/728). Also see the `root-service-error` branch for a non-working example of how it would look if we could. **Workaround:** use Express middleware (see current implementation in `master`).
+
 ### Perceived behaviour from Mastodon interactions
 
 #### Initial actor request flow
