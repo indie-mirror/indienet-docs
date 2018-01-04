@@ -50,6 +50,8 @@ The content type for the JSON body parser in Express must be set to the Activity
 app.use(express.json({type: ['application/json', 'application/activity+json', 'application/ld+json; profile="https://www.w3.org/ns/activitystreams"']}))
 ```
 
+Note: Mastodon uses the `application/activity+json` content type (which is _should_ not _must_ in the spec. Supporting both is the safest route.)
+
 ### Perceived behaviour from Mastodon interactions
 
 #### Initial actor request flow
