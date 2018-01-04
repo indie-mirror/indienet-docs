@@ -42,6 +42,14 @@ Evan Prodromou has just created a project to help unit test ActivityPub implemen
 
 https://gitlab.com/aral/activitypub-mock
 
+### Content-Type note
+
+The content type for the JSON body parser in Express must be set to the ActivityPub content types or the body of the request will come in empty. e.g.,
+
+```javascript
+app.use(express.json({type: ['application/json', 'application/activity+json', 'application/ld+json; profile="https://www.w3.org/ns/activitystreams"']}))
+```
+
 ### Perceived behaviour from Mastodon interactions
 
 #### Initial actor request flow
