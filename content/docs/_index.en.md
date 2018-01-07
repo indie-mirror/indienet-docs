@@ -4,8 +4,7 @@ alwaysopen = "true"
 weight = "50"
 +++
 
-<img src='https://source.ind.ie/uploads/-/system/project/avatar/334/Docs_3x.png' width='140' alt='Indienet Docs Logo' style='display: block; margin-left: auto; margin-right: auto;'>
-
+<img src='/images/Docs@3x.png' alt='Indienet Docs logo' style='width: 14vmax; margin-top: 0;'>
 
 This is the documentation for the Docs project itself.
 

@@ -4,7 +4,7 @@ weight = "45"
 alwaysopen = "true"
 +++
 
-<img src='https://source.ind.ie/uploads/-/system/group/avatar/746/Spikes_3x.png' width='140' alt='Indienet Spikes Logo' style='display: block; margin-left: auto; margin-right: auto;'>
+<img src='/images/Spikes@3x.png' alt='Indienet Spikes logo' style='width: 14vmax; margin-top: 0;'>
 
 Quick throwaway projects for exploring technical and design problems.
 
