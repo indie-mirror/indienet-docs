@@ -17,6 +17,21 @@ As of the time of this writing, Mastodon alone had over 1M active accounts sprea
 
 A major goal of our project is to raise the number of ActivityPub instances by at least an order of magnitude as Indienet apps are, by definition, instances of one.
 
+### Specs
+
+In addition to the main ActivityPub specification, there are a number of related specifications that we must be aware of. Most importantly, ActivityPub is based on Activity Streams 2.0 and implemented in JSON-LD. The general Social Web Protocols editor’s draft is also a good overview of related technologies.
+
+PDF versions of the specifications are linked to below. The canonical locations of the specs is the W3C.
+
+  * [AcvitityPub](/specs/activitypub.pdf)
+  * [Activity Streams 2.0](/specs/activity-streams-2.0.pdf)
+  * [Activity Vocabulary](/specs/activity-vocabulary.pdf)
+  * [JSON-LD 1.0](/specs/json-ld-1.0.pdf)
+  * [JSON-LD 1.0: processing algorithms and API](/specs/json-ld-1.0-processing-algorithms-and-api.pdf)
+  * [Social Web Protocols](/specs/social-web-protocols.pdf)
+  * [RFC 2119: Key words for use in RFCs to indicate requirement levels](/specs/rfc-2119-key-words-for-use-in-rfcs-to-indicate-requirement-levels.pdf)
+
+
 ### Gotchas
 
   * Note: if we want to federate with Mastodon (we do), we must also implement WebFinger as Mastodon doesn’t accept Actor objects without a WebFinger. Discussion: https://github.com/w3c/activitypub/issues/194
