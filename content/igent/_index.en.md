@@ -3,6 +3,8 @@ title = "iGent"
 weight = "40"
 +++
 
+<img src='/images/iGent@3x.png' alt='iGent logo' style='width: 10vmax;'>
+
 iGent is specific implementations of [Indienet Site](../site) and [Indienet Hub](../hub) for the [City of Ghent](https://stad.gent) in Belgium.
 
 The goal is to empower the citizens of Ghent with their own place on the Internet, at their own domain which they own and control. This is a hosted, interoperable, federated, free and open, and easy to use system.
