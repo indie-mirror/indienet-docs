@@ -13,17 +13,17 @@ Although RethinkDB supports clustering natively, scalability of the database sho
 
   * Changefeed connections might fail: [ReQL proposal: restarting feeds](https://github.com/rethinkdb/rethinkdb/issues/3471)
 
-### Related projects
+### Related projects
 
   * [node-rethinkdb-job-queue](https://github.com/grantcarthew/node-rethinkdb-job-queue): A persistent job or task queue backed by RethinkDB. (Also see, regarding changefeed connection failures: [Add rethinkdb-changefeed-reconnect](https://github.com/grantcarthew/node-rethinkdb-job-queue/issues/77))
 
 
-### Useful links
+### Useful links
 
   * [Troubleshooting common RethinkDB problems](https://rethinkdb.com/docs/troubleshooting/)
 
 
-## Other options
+## Other options
 
 A more traditional database / message queue combination.
 
