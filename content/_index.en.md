@@ -23,7 +23,7 @@ The goals of the project include:
   * All code is [free and open](https://fsfe.org/freesoftware/basics/4freedoms.en.html).
   * Whenever possible we use and develop decentralised, federated, interoperable initiatives [to encourage individual sovereignty and a healthy commons](https://ar.al/notes/encouraging-individual-sovereignty-and-a-healthy-commons/).
   * We adhere to established standards if possible, extend them if necessary, and only reinvent the wheel when unavoidable.
-  * We have a [code of conduct](https://forum.ind.ie/t/code-of-conduct/16) that we enforce.
+  * We have a [code of conduct](/code-of-conduct) that we enforce.
 
 This living documentation is an important part of the initiative and evolves as the project does. See the [docs](/docs) section for documentation on the documentation project itself.
 
