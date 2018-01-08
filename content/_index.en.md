@@ -18,11 +18,14 @@ The goals of the project include:
 
 ## Principles
 
-  * Development is carried out in the open
-  * All code is free and open
-  * Whenever possible we use and develop decentralised, federated initiatives
+  * We adhere to the [Ethical Design manifesto](https://ind.ie/ethical-design).
+  * Development is carried out [in the open](https://source.ind.ie/indienet).
+  * All code is [free and open](https://fsfe.org/freesoftware/basics/4freedoms.en.html).
+  * Whenever possible we use and develop decentralised, federated, interoperable initiatives [to encourage individual sovereignty and a healthy commons](https://ar.al/notes/encouraging-individual-sovereignty-and-a-healthy-commons/).
+  * We adhere to established standards if possible, extend them if necessary, and only reinvent the wheel when unavoidable.
+  * We have a [code of conduct](https://forum.ind.ie/t/code-of-conduct/16) that we enforce.
 
-All development and communication is carried out in the open and all code written is free and open source. This living documentation is an important part of the initiative and evolves as the project does.
+This living documentation is an important part of the initiative and evolves as the project does. See the [docs](/docs) section for documentation on the documentation project itself.
 
 ## Source code
 
