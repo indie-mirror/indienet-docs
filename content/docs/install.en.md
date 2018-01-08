@@ -3,7 +3,9 @@ title = "Install"
 weight = "20"
 +++
 
-1. **Clone the repository:**
+1. [Install Hugo](https://gohugo.io/getting-started/installing/)
+
+2. **Clone the repository:**
   * HTTPS (doesn’t require authentication):
   ```bash
   git clone https://source.ind.ie/indienet/docs.git
@@ -14,7 +16,7 @@ weight = "20"
   git clone git@source.ind.ie:indienet/docs.git
   ```
 
-2. **Run the `./install` script.**
+3. **Run the `./install` script.**
 
     Or, manually:
 
