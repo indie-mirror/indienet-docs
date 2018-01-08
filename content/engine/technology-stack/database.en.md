@@ -15,6 +15,19 @@ Although RethinkDB supports clustering natively, scalability of the database sho
 
 ### Related projects
 
+  * [Penseur](https://github.com/hueniverse/penseur): Lightweight RethinkDB wrapper. Changes API includes reconnect functionality:
+
+```
+await db[table].changes(criteria, [options])
+
+Subscribe to changes matching the given criteria for the table.
+
+criteria - db criteria functions chained together
+options - optional object with the following properties
+handler - handler function to execute when changes occur.
+reconnect - boolean, reconnect if the connection to the feed is interrupted
+initial - boolean, include the initial results in the change feed
+```
   * [node-rethinkdb-job-queue](https://github.com/grantcarthew/node-rethinkdb-job-queue): A persistent job or task queue backed by RethinkDB. (Also see, regarding changefeed connection failures: [Add rethinkdb-changefeed-reconnect](https://github.com/grantcarthew/node-rethinkdb-job-queue/issues/77))
 
 
