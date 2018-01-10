@@ -5,7 +5,7 @@ weight = "70"
 
 **Note:** this decision is under review.
 
-**Note:** What can we learn from our experience with Heartbeat Node (e.g., use of LevelDB?): https://source.ind.ie/project/heartbeat-node
+**Note:** What can we learn from our experience with [Heartbeat Node](https://source.ind.ie/project/heartbeat-node) - e.g., regarding the use of LevelDB for this purpose? (e.g., see the [implementation of the StreamWeaver class](https://source.ind.ie/project/heartbeat-node/blob/master/StreamWeaver.coffee)).
 
 ## RethinkDB
 
