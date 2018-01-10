@@ -49,4 +49,6 @@ As such, the current plans for authentication are:
 
   * [JWT using RSA public/private key pairs (video)](https://www.youtube.com/watch?v=F0HLIe3kNvM)
 
+  * [Lib Sodium](https://github.com/paixaop/node-sodium)
+
 ## JWT
