@@ -3,6 +3,10 @@ title = "Database"
 weight = "70"
 +++
 
+**Note:** this decision is under review.
+
+**Note:** What can we learn from our experience with Heartbeat Node (e.g., use of LevelDB?): https://source.ind.ie/project/heartbeat-node
+
 ## RethinkDB
 
 RethinkDB is a realtime database that has a changefeeds feature that could simplify our production footprint/deployment requirements, server-side code dramatically and enable us to keep an event-driven workflow throughout.
