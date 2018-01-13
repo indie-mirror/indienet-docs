@@ -37,7 +37,7 @@ As such, the current plans for authentication are:
 
 ## General resources
 
-  * [WebKit: Update on Web Cryptography](https://webkit.org/blog/7790/update-on-web-cryptography/)
+  * [WebKit: Update on Web Cryptography](https://webkit.org/blog/7790/update-on-web-cryptography/): “When developing with pure JavaScript crypto libraries, secret or private keys are often stored in the global JavaScript execution context. It is extremely vulnerable as keys are exposed to any JavaScript resources being loaded and therefore allows XSS attackers be able to steal the keys. WebCrypto API instead protects the secret or private keys by storing them completely outside of the JavaScript execution context.”
 
   * [Storing Cryptographic Keys in Persistent Browser Storage](https://pomcor.com/2017/06/02/keys-in-browser/)
 
