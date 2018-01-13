@@ -37,6 +37,8 @@ As such, the current plans for authentication are:
 
 ## General resources
 
+  * [WebKit: Update on Web Cryptography](https://webkit.org/blog/7790/update-on-web-cryptography/)
+
   * [Storing Cryptographic Keys in Persistent Browser Storage](https://pomcor.com/2017/06/02/keys-in-browser/)
 
   * [Web Crypto API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API)
