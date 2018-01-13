@@ -31,9 +31,23 @@ As such, the current plans for authentication are:
 
   3. It uses the decrypted private key to authenticate using public key authentication (see below).
 
+## Future thoughts:
+
+  * Use a Service Worker to handle cryptographic functions in the browser to keep the private key safe from a server that turns malicious at some point. (Keep an eye on [browser compatibility](https://caniuse.com/#search=service%20worker) – once all evergreen browsers support this, let’s take a look.)
+
+## General resources
+
+  * [Storing Cryptographic Keys in Persistent Browser Storage](https://pomcor.com/2017/06/02/keys-in-browser/)
+
+  * [Web Crypto API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API)
+
+  * [Web Crypto examples](https://github.com/diafygi/webcrypto-examples)
+
 ## Public Key Authentication
 
 ### Resources
+
+  * For a general guide on application of cryptography for deelopers, see the book [Serious Cryptography: A Practical Introduction to Modern Encryption](https://nostarch.com/seriouscrypto)
 
   * [feathers-authentication-publickey](https://github.com/amaurymartiny/feathers-authentication-publickey): “Public Key authentication strategy for feathers-authentication using Passport” ([Example.](https://github.com/amaurymartiny/feathers-authentication-publickey/tree/master/example))
 
