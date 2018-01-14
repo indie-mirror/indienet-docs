@@ -21,6 +21,12 @@ Security goals for Indienet are:
 
   3. Please document findings and questions on the notes sections of the spikes on this page as you work.
 
+  4. JavaScript should be in [JavaScript Standard Style](https://github.com/feross/standard).
+
+## Source
+
+* https://source.ind.ie/indienet/spikes/security
+
 ## Spike 1: OpenCrypto in browser: key generation, persistence, & retrieval
 
 ### Spike goals
@@ -30,6 +36,10 @@ Security goals for Indienet are:
 2. Explore the WebCrypto API-based OpenCrypto library. Is it fit for purpose?
 
 ### Spike tasks
+
+Please keep the Web interface as simple as possible. Plain HTML.
+
+Please also keep the server (Node) as simple as possible. Plain [Express](https://expressjs.com).
 
 1. **Create a public key and an *unextractable* private key**
 
@@ -67,6 +77,8 @@ Security goals for Indienet are:
 
       * `encryptedPrivateKey` can be downloaded to any client that the owner uses in the future. When the owner provides the password they used in Step #2, we can recreate the symmetric key and decrypt `encryptedPrivateKey` to obtain `privateKey` (which we persist, as in Step 1, on the new client).
 
+Note: at this point, the server has been set up/configured for the first time. It has been claimed by the owner. From here on, to authenticate the owner, we will use publickey authentication (see Spike 3).
+
 ### Notes
 
   * None yet.
@@ -96,7 +108,36 @@ Use [libsodium](https://download.libsodium.org/doc/) to implement Spike 1 (pleas
 
 ---
 
-## Spike 3: End-to-end encrypted private messages
+## Spike 3: Publickey authentication
+
+To authenticate with the server for the REST and WebSocket APIs, we will be using JWT with a publickey authentication scheme, implemented within Passport.
+
+For publickey authentication, we will:
+
+1. Receive a `nonce` from the server
+
+2. Sign the `nonce` with our `unencryptedPrivateKey` to get a `signedNonce`
+
+3. Transfer the `signedNonce` to the server
+
+4. On the server, verify the signature using our `publicKey`
+
+5. If the signature is verified, the server will return the JWT, which we will persist on the client and use in subsequent requests. (We should import the JWT using the WebCrypto API as an unextractable key.)
+
+For this spike, please explore two versions, in order:
+
+1. Version 1: Vanilla Express and Passport:
+
+   * [Express](https://expressjs.com)
+   * [Passport](http://www.passportjs.org)
+   * Test: does [passport-publickey](https://github.com/timfpark/passport-publickey) do what we want, or can we build what we want on top of it, or do we need to look into implementing our own publickey authentication scheme on top of Passport
+   * Research: are there any other publickey authentication schemes implmented in JavaScript. Quickly test them out and report back if there are.
+
+2. Version 2: [FeathersJS](https://feathersjs.com)
+
+---
+
+## Spike 4: End-to-end encrypted private messages
 
 Mock a separate, second node (`node2`) that has a:
 
@@ -104,7 +145,7 @@ Mock a separate, second node (`node2`) that has a:
   * public key (`publicKeyNode2`)
   * a message it wants to send to our node (`messageNode2`)  
 
-The goal is for this second node is to send us a private message, encrypted with our public key, that we will decrypt and read using our private key (as created in Spike 1; please keep the spikes separate – you can copy Spike 1 to start Spike 2).
+The goal is for this second node is to send us a private message, encrypted with our public key, that we will decrypt and read using our private key (as created in Spikes 1 & 2; please keep the spikes separate).
 
 Continue to mock `node2` to:
 
