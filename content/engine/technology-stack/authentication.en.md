@@ -49,6 +49,8 @@ As such, the current plans for authentication are:
 
   * [Cryptobench.js](https://github.com/mnasyrov/cryptobench-js)
 
+  * An older article (2013) by Alex Maccaw on [end-to-end encryption in web apps](https://blog.alexmaccaw.com/end-to-end-encryption-in-js-web-apps).
+
 ## Public Key Authentication
 
 ### Resources
