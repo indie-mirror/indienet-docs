@@ -29,6 +29,8 @@ Security goals for Indienet are:
 
 ## Spike 1: OpenCrypto in browser: key generation, persistence, & retrieval
 
+![Authentication flow](/images/spikes/authentication.png)
+
 ### Spike goals
 
 1. Explore the design; does it work? Do we encounter any pain points or obvious flaws?
