@@ -47,6 +47,8 @@ As such, the current plans for authentication are:
 
   * [Web Crypto examples](https://github.com/diafygi/webcrypto-examples)
 
+  * [Cryptobench.js](https://github.com/mnasyrov/cryptobench-js)
+
 ## Public Key Authentication
 
 ### Resources
