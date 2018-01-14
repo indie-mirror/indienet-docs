@@ -137,6 +137,10 @@ For this spike, please explore two versions, in order:
 
 2. Version 2: [FeathersJS](https://feathersjs.com)
 
+### Notes
+
+  * None yet.
+
 ---
 
 ## Spike 4: End-to-end encrypted private messages
