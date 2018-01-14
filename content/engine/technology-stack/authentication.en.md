@@ -37,15 +37,17 @@ As such, the current plans for authentication are:
 
 ## General resources
 
+  * [OpenCrypto](https://github.com/safebash/OpenCrypto): OpenCrypto is a Cryptographic JavaScript library built on top of [WebCrypto API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API)
+
   * [Web Crypto Live Table](https://diafygi.github.io/webcrypto-examples/)
 
   * [WebKit: Update on Web Cryptography](https://webkit.org/blog/7790/update-on-web-cryptography/): “When developing with pure JavaScript crypto libraries, secret or private keys are often stored in the global JavaScript execution context. It is extremely vulnerable as keys are exposed to any JavaScript resources being loaded and therefore allows XSS attackers be able to steal the keys. WebCrypto API instead protects the secret or private keys by storing them completely outside of the JavaScript execution context.”
 
   * [Storing Cryptographic Keys in Persistent Browser Storage](https://pomcor.com/2017/06/02/keys-in-browser/)
 
-  * [Web Crypto API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API)
+  * [WebCrypto API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API)
 
-  * [Web Crypto examples](https://github.com/diafygi/webcrypto-examples)
+  * [WebCrypto examples](https://github.com/diafygi/webcrypto-examples)
 
   * [Cryptobench.js](https://github.com/mnasyrov/cryptobench-js)
 
