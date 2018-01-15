@@ -13,6 +13,12 @@ weight = "70"
 
 [Secure Scuttlebutt](https://github.com/ssbc/secure-scuttlebutt) is built on LevelDB, specifically for p2p messaging. Would the higher-level abstraction aid or limit us?
 
+Related:
+
+  * [Kappa architecture](http://milinda.pathirage.org/kappa-architecture.com/)
+  * [Scuttlebot](https://github.com/ssbc/scuttlebot)
+  
+
 ## RethinkDB
 
 RethinkDB is a realtime database that has a changefeeds feature that could simplify our production footprint/deployment requirements, server-side code dramatically and enable us to keep an event-driven workflow throughout.
