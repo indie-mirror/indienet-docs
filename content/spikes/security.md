@@ -47,9 +47,10 @@ Please also keep the server (Node) as simple as possible. Plain [Express](https:
 
     This will result in:
 
-    * The an *unextractable* unencrypted private key (`unencryptedPrivateKey`)
+    * The an *unextractable* unencrypted private key (`unencryptedPrivateKey`) (See [this example](https://gist.github.com/saulshanabrook/b74984677bccd08b028b30d9968623f5).)
 
     * The public key (`publicKey`)
+
 
 2. **Persist the unextractable `unencryptedPrivateKey` in IndexedDB** (see [level-browserify](https://www.npmjs.com/package/level-browserify) for a simpler LevelDB interface for IndexedDB).
 
