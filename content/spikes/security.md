@@ -47,30 +47,33 @@ Please also keep the server (Node) as simple as possible. Plain [Express](https:
 
     This will result in:
 
-    * The an *unextractable* unencrypted private key (`unencryptedPrivateKey`) (See [this example](https://gist.github.com/saulshanabrook/b74984677bccd08b028b30d9968623f5).)
+    * The an <strike>*unextractable*</strike> extractable unencrypted private key (`unencryptedPrivateKey`)
 
     * The public key (`publicKey`)
 
-
-2. **Persist the unextractable `unencryptedPrivateKey` in IndexedDB** (see [level-browserify](https://www.npmjs.com/package/level-browserify) for a simpler LevelDB interface for IndexedDB).
-
-    This means that:
-
-    * The private key material is not accessible from JavaScript (we – or a malicious future script – can still use the key but can’t extract it)
-
-    * The owner of the site doesn’t have to keep entering their password (they will have to – once – the first time they use a different browser or a different device to access their personal federated web site)
+    **Update:** note that we are now creating an _extractable_ private key at this point (otherwise, as pointed out by Wim during the spike, we couldn’t encrypt it with the secret key in the next steps). Also note that this changes the order of the steps below:
 
 3. **Create an ephemeral symmetric key from a master password** that the site owner chooses (`passwordKey`) and use it to .
 
 4. **Encrypt the `unencryptedPrivateKey`** with the `passwordKey` to get the `encryptedPrivateKey`
 
-5. **Transfer `publicKey` and `encryptedPrivateKey` to the server** and store them there. You can store them on the file system.
+5. **Import the `unencryptedPrivateKey` as an unextractable key using the WebCrypto API and store it in IndexedDB** (see [level-browserify](https://www.npmjs.com/package/level-browserify) for a simpler LevelDB interface for IndexedDB).
 
-6. **Make `publicKey` accessible from a route on the server** (just use plain Express on the server):
+    **Note:** see [this example](https://gist.github.com/saulshanabrook/b74984677bccd08b028b30d9968623f5) of storing unextractable keys in IndexedDB (in that example they create an unextractable key, we will be importing an the extractable key we created as an unextractable key during the import call).
+
+    This means that:
+
+    * From this first session on, the private key material is not accessible from JavaScript (we – or a malicious future script – can still use the key but can’t extract it)
+
+    * The owner of the site doesn’t have to keep entering their password (they will have to – once – the first time they use a different browser or a different device to access their personal federated web site)
+
+6. **Transfer `publicKey` and `encryptedPrivateKey` to the server** and store them there. You can store them on the file system.
+
+7. **Make `publicKey` accessible from a route on the server** (just use plain Express on the server):
 
     `GET /public-key` → returns `publicKey`
 
-7. **Make `encryptedPrivateKey` accessible from a route on the server:**
+8. **Make `encryptedPrivateKey` accessible from a route on the server:**
 
     `GET /private-key` → returns `encryptedPrivateKey`
 
@@ -84,7 +87,9 @@ Note: at this point, the server has been set up/configured for the first time. I
 
 ### Notes
 
-  * None yet.
+  * The flow has been updated based on feedback from the team to remove a logic error in the original (the private key is now created as an extractable key as, otherwise, it would not be possible to encrypt it and send it to the server). We do, however, still import the unencrypted private key as an unextractable key and store it in IndexedDB as such.
+
+  * Wim pointed out that we should note that IndexedDB can be deleted by the browser due to space constraints. We should plan for this eventuality and handle it gracefully. The impact to the site owner will be that they will have to enter their password again so we can reauthenticate them.
 
 ---
 
