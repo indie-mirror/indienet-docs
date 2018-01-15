@@ -23,6 +23,11 @@ Just like any web app, this means that we must trust the host not to:
 
 While these issues are blatantly apparent for web clients, they are also faced by native apps today in a world of App Stores and automatic updates.
 
+## Spikes
+
+  * Documentation: [/spikes/security](/spikes/security)
+  * Source: https://source.ind.ie/indienet/spikes/security
+
 ## Resources
 
   * [End-To-End Web Crypto: A Broken Security Model](https://www.indolering.com/e2e-web-crypto/)
