@@ -61,9 +61,11 @@ As such, the current plans for authentication are:
 
 ## Public Key Authentication
 
+Note: we should keep in mind how Mastodon uses public-key authentication for message verification (see https://web-payments.org/vocabs/security#publicKey)
+
 ### Resources
 
-  * For a general guide on application of cryptography for deelopers, see the book [Serious Cryptography: A Practical Introduction to Modern Encryption](https://nostarch.com/seriouscrypto)
+  * For a general guide on application of cryptography for developers, see the book [Serious Cryptography: A Practical Introduction to Modern Encryption](https://nostarch.com/seriouscrypto)
 
   * [feathers-authentication-publickey](https://github.com/amaurymartiny/feathers-authentication-publickey): “Public Key authentication strategy for feathers-authentication using Passport” ([Example.](https://github.com/amaurymartiny/feathers-authentication-publickey/tree/master/example))
 
