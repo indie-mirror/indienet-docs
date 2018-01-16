@@ -17,7 +17,11 @@ Related:
 
   * [Kappa architecture](http://milinda.pathirage.org/kappa-architecture.com/)
   * [Scuttlebot](https://github.com/ssbc/scuttlebot)
-  
+
+## Other realtime/distributed data stores
+
+  * [Gun](https://github.com/amark/gun): “A realtime, decentralized, offline-first, graph database engine.”
+  * [HyperDB](https://github.com/mafintosh/hyperdb): “Distributed scalable database” (as used in [DAT project](https://datproject.org).)
 
 ## RethinkDB
 
