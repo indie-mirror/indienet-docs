@@ -112,7 +112,7 @@ Use [libsodium](https://download.libsodium.org/doc/) to implement Spike 1 (pleas
 
 ### Notes
 
-  * None yet.
+  * We have chosen to go with the [Natrium Browser](https://github.com/wilhelmmatilainen/natrium-browser) because this library implements promises instead of callbacks. It also combines the [libsodium.js](https://github.com/jedisct1/libsodium.js) library with [Natrium](https://github.com/wilhelmmatilainen/natrium) so we have the best of both.
 
 ---
 
