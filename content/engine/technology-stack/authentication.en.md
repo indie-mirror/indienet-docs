@@ -41,6 +41,8 @@ As such, the current plans for authentication are:
 
   * Would using a Service Worker to handle cryptographic functions in the browser have security advantages? (Keep an eye on [browser compatibility](https://caniuse.com/#search=service%20worker) – once all evergreen browsers support this, let’s take a look.)
 
+  * [ssb-horcrux](https://github.com/ssbc/ssb-horcrux): An interesting apporach to key recovery with a Harry Potter twist (“Split your key into some number of parts, give those to trusted friends, and if your computer ever dies, you can re-create your private key.”) Also see: [Shamir’s Secret Sharing](https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing)
+
 ## General resources
 
   * [OpenCrypto](https://github.com/safebash/OpenCrypto): OpenCrypto is a Cryptographic JavaScript library built on top of [WebCrypto API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API)
