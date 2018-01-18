@@ -11,7 +11,7 @@ Security goals for Indienet are:
 
   2. Enable people to access their federated personal web site, and their entire list of end-to-end encrypted private messages, from any browser/device using a master password. If they haven’t authenticated on a certain device before, they will have to enter their master password the first time only.
 
-  3. Research and use the latest cryptography knowledge and best practices whenever possible.
+  3. Research and use the latest cryptography knowledge and best practices whenever possible. (We will be consulting with cryptographers on our choices as we go.)
 
 ## General notes
 
@@ -115,9 +115,10 @@ Use [libsodium](https://download.libsodium.org/doc/) to implement Spike 1 (pleas
   * We have chosen to go with the [Natrium Browser](https://github.com/wilhelmmatilainen/natrium-browser) because this library implements promises instead of callbacks. It also combines the [libsodium.js](https://github.com/jedisct1/libsodium.js) library with [Natrium](https://github.com/wilhelmmatilainen/natrium) so we have the best of both.
     ==> After trying to implement this, we came to the conclusion that both Natrium Browser and Natrium are very difficult to implement and rely on different build tools. That's why we choose to implement the [libsodium.js](https://github.com/jedisct1/libsodium.js) library
 
-  * The problem with using libsodium is that you have to make choises about different settings for the encryption yourself. In contrast to the OpenCrypto library, the libsodium one is "big" (42kb ~ 512kb + 57,5kb).
+  * The problem with using libsodium is that you have to make choices about different settings for the encryption yourself. In contrast to the OpenCrypto library, the libsodium one is "big" (42kb ~ 512kb + 57,5kb).
 
-  * For making a choice it would be best to contact a professional cryptographer.
+  * [Libsodium quick reference](https://dev.to/paragonie/libsodium-quick-reference)
+
 ---
 
 ## Spike 3: Publickey authentication
