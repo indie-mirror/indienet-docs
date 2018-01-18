@@ -85,4 +85,6 @@ Note: we should keep in mind how Mastodon uses public-key authentication for mes
 
   * [Lib Sodium](https://github.com/paixaop/node-sodium)
 
+  * [node-http-signature](https://github.com/joyent/node-http-signature) “node-http-signature is a node.js library that has client and server components for [Joyent's HTTP Signature Scheme](https://github.com/joyent/node-http-signature/blob/master/http_signing.md).”
+
 ## JWT
