@@ -34,6 +34,40 @@ sequenceDiagram
   E->>F: Use
   F->>C: Interact with
   F->>G: Interact with
-
-
 {{< /mermaid >}}
+
+## Onboarding scenarios
+
+### A. Synchronous
+
+1. You receive a message from the city via an out-of-band channel (snail mail, email, text message, etc.) with a unique, easier to type URL, valid for one domain and a web site on which to redeem it. (We could also include a QR code option so, e.g., people with iPhones could just point their camera at it to visit the URL.)
+
+2. You visit the URL and choose a .Gent domain name
+
+3. Within 30 seconds you are up and running at your own domain with your own federated personal web site.
+
+#### Design requirements
+
+1. Domain registration TTL close to zero (requires coordination with .Gent registrar – we are currently in talks)
+
+2. Server instance TTL within above-stated 30 second period (this is not an unsolved problem – we could have a buffer of N instances ready to go at all times).
+
+3. City cooperation for out-of-band communication. Not a problem; already have buy-in.
+
+### B. Asynchronous
+
+First two steps are the same as A.
+
+3. You also enter your email address (or phone number)
+
+4. The web site informs you that you will receive an email (or a text message) when the site is ready.
+
+5. You get an email (or text message) when the web site is ready with a link to your own domain.
+
+## Welcome/setup experience on the site itself
+
+1. On the welcome screen, you pick a password that is never communicated to the host.
+
+2. You are shown some people, city services, etc., that you can follow and given brief initial instructions.
+
+3. You’re up and running.
