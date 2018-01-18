@@ -30,3 +30,7 @@ Also see [ActivityPub implementation reports](https://activitypub.rocks/implemen
 Discussion on the Mastodon issue tracker about integrating [Matrix](https://matrix.org).
 
 https://github.com/tootsuite/mastodon/issues/311
+
+## Secure Scuttlebutt
+
+  * [Decent](http://gwenbell.com)

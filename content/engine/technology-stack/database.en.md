@@ -21,6 +21,7 @@ Related:
 ## Other realtime/distributed data stores
 
   * [Gun](https://github.com/amark/gun): “A realtime, decentralized, offline-first, graph database engine.” (Also see: [Gun Auth](https://github.com/amark/gun/wiki/auth))
+
   * [HyperDB](https://github.com/mafintosh/hyperdb): “Distributed scalable database” (as used in [DAT project](https://datproject.org).)
 
 ## RethinkDB
