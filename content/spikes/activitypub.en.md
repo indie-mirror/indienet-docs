@@ -42,6 +42,15 @@ Evan Prodromou has just created a project to help unit test ActivityPub implemen
 
 https://gitlab.com/aral/activitypub-mock
 
+
+### JSON Server
+
+“Get a full fake REST API with zero coding in less than 30 seconds (seriously)”
+
+(Might be great for testing as we develop. See [jsonplaceholder.typicode.com](http://jsonplaceholder.typicode.com/) for a live demo.)
+
+https://github.com/typicode/json-server
+
 ### Content-Type note
 
 The content type for the JSON body parser in Express must be set to the ActivityPub content types or the body of the request will come in empty. e.g.,
