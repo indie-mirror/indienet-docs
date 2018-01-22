@@ -34,6 +34,13 @@ https://source.ind.ie/indienet/spikes/activitypub
   6. [ ] Mock Followers
   7. [ ] Mock Following
 
+## Resources
+
+  * [Activity Streams Test Documents](https://github.com/w3c-social/activitystreams-test-documents)
+
+  * [LevelGraph JSON-LD](https://github.com/levelgraph/levelgraph-jsonld) “LevelGraph-JSONLD is a plugin for LevelGraph that adds the ability to store, retrieve and delete JSON-LD objects. In fact, it is a full-blown Object-Document-Mapper (ODM) for LevelGraph.” (Also see: [this video](http://nodejsconfit.levelgraph.io), by the author.)
+
+
 ## Notes
 
 ### ActivityPub-Mock
