@@ -23,6 +23,9 @@ weight = "60"
 
   * Site: http://nuxtjs.org (“Universal Vue.js Applications”)
 
-#### Resources
+#### Auth-related links/issues with Feathers:
 
+  * https://github.com/feathersjs/authentication
+  * https://github.com/feathersjs/authentication-jwt/pull/55
+  * https://github.com/feathersjs/authentication/issues/560 
   * [Feathers-Vuex](https://github.com/feathers-plus/feathers-vuex); supports working with auth & Nuxt.
