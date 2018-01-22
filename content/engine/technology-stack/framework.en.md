@@ -22,3 +22,7 @@ weight = "60"
 ### NuxtJS
 
   * Site: http://nuxtjs.org (“Universal Vue.js Applications”)
+
+#### Resources
+
+  * [Feathers-Vuex](https://github.com/feathers-plus/feathers-vuex); supports working with auth & Nuxt.
