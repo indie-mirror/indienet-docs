@@ -40,6 +40,7 @@ https://source.ind.ie/indienet/spikes/activitypub
 
   * [LevelGraph JSON-LD](https://github.com/levelgraph/levelgraph-jsonld) “LevelGraph-JSONLD is a plugin for LevelGraph that adds the ability to store, retrieve and delete JSON-LD objects. In fact, it is a full-blown Object-Document-Mapper (ODM) for LevelGraph.” (Also see: [this video](http://nodejsconfit.levelgraph.io), by the author.)
 
+  * [Mississippi](https://github.com/maxogden/mississippi) “A collection of useful stream utility modules.”
 
 ## Notes
 
