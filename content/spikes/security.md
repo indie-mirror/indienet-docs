@@ -150,7 +150,17 @@ For this spike, please explore two versions, in order:
 
 ### Notes
 
-  * None yet.
+At the moment we created a keypair with the OpenCrypto library. The library generates keys based on the RSA-OAEP algorithm. But this algorithm can only be used for encryption and decryption.
+So in order to sign and verify a nonce, we have to create a new keypair with the RSA-PKCS1-v1_5 algorithm.
+So a site will have two keypairs, one for encryption/decryption and one for sign/verify.
+
+We will have to make a pull request to the OpenCrypto library, so we can choose which algorithm he will use to generate a keypair.
+
+More info about which algorithm to use for what:
+* https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API/Supported_algorithms
+* https://blog.engelke.com/tag/webcrypto/
+* https://stackoverflow.com/questions/33929699/using-webcrypto-to-generate-a-key-pair-useful-for-both-encryption-and-signing
+* https://crypto.stackexchange.com/questions/12090/using-the-same-rsa-keypair-to-sign-and-encrypt
 
 ---
 
@@ -160,7 +170,7 @@ Mock a separate, second node (`node2`) that has a:
 
   * private key (`privateKeyNode2`)
   * public key (`publicKeyNode2`)
-  * a message it wants to send to our node (`messageNode2`)  
+  * a message it wants to send to our node (`messageNode2`)
 
 The goal is for this second node is to send us a private message, encrypted with our public key, that we will decrypt and read using our private key (as created in Spikes 1 & 2; please keep the spikes separate).
 
@@ -184,7 +194,9 @@ Then, on our node:
 
 ### Notes
 
-  * None yet.
+  * In this spike we send an encrypted message from server 1 (port 8080) to server 2 (port 8181).
+  * We only saved the session key encrypted with the public key of the receiving server. In a real two way communication system, we should also encrypt the session key with the public key of the sending server. This encrypted session key should be stored together with the encrypted message on the sending server.
+  * This spike only works with ASCII encoded strings, since we have to convert strings to base64. In future releases we should support UNICODE instead.
 
 ---
 
