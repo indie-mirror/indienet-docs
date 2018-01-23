@@ -9,7 +9,7 @@ weight = "70"
 
 **Note:** What can we learn from our experience with [Heartbeat Node](https://source.ind.ie/project/heartbeat-node) - e.g., regarding the use of LevelDB for this purpose? (e.g., see the [implementation of the StreamWeaver class](https://source.ind.ie/project/heartbeat-node/blob/master/StreamWeaver.coffee)).
 
-## Secure Scuttlebutt
+## Secure Scuttlebutt
 
 [Secure Scuttlebutt](https://github.com/ssbc/secure-scuttlebutt) is built on LevelDB, specifically for p2p messaging. Would the higher-level abstraction aid or limit us?
 
@@ -18,7 +18,7 @@ Related:
   * [Kappa architecture](http://milinda.pathirage.org/kappa-architecture.com/)
   * [Scuttlebot](https://github.com/ssbc/scuttlebot)
 
-## Other realtime/distributed data stores
+## Other realtime/distributed data stores
 
   * [Gun](https://github.com/amark/gun): “A realtime, decentralized, offline-first, graph database engine.” (Also see: [Gun Auth](https://github.com/amark/gun/wiki/auth))
 
