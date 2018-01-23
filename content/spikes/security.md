@@ -27,6 +27,80 @@ Security goals for Indienet are:
 
 * https://source.ind.ie/indienet/spikes/security
 
+# Week 2
+
+![xkcd comic on password strength](/images/spikes/password_strength.png)
+
+## General notes / conclusions
+
+The goal of this week is to take what we’ve learned from Week 1 and build upon that to spike out authentication with the tech stack that we’re considering (FeathersJS + Nuxt).
+
+Based on what we learned last week:
+
+## General cryptography policy
+
+Use best practices, do not roll any custom crypto:
+
+  * We use standard [libsodium](https://libsodium.org) methods
+  * We encourage use of strong passwords to project the account (e.g., see [zxcvbn](https://github.com/dropbox/zxcvbn); [blog post/demo](https://blogs.dropbox.com/tech/2012/04/zxcvbn-realistic-password-strength-estimation/))
+  * We use `crypto_pwhash` to derive the key we encrypt the private key with (uses Argon2)
+  * We use `crypto_sign_detached` to sign (uses Ed25519)
+  * We use `crypto_box_easy` to encrypt (uses X25519)
+  * We use one keypair (We will use libsodium’s built-in methods to convert the Ed25519 keys to Curve25519 keys for  for signing and Curve25519 for encryption.)
+
+## Spike 5: Publickey authentication with Feathers
+
+### Goals
+
+  * Sign in to a FeathersJS API from a single-page web app using a publickey authentication strategy.
+
+### Details
+
+  * Client: Use plain HTML, CSS, JavaScript (no framework)
+  * Use libsodium
+  * Adhere to general cryptography policy, above.
+
+### Tests
+
+  * Sign in (via sign-in form)
+  * Sign out (via sign-out button)
+  * Access public route: access allowed regardless of authentication state
+  * Access private route when authenticated: access allowed
+  * Access private route when unauthenticated: access denied
+
+### Notes
+
+  * None yet.
+
+---
+
+## Spike 6: Publickey authentication with Feathers, Vuex, and Nuxt
+
+### Goals
+
+  * Build on Spike 5 to add Nuxt and Vuex
+  * Move from a client-side rendered FeathersJS/HTML single-page app to server-side rendered/universal Nuxt/Vuex client with FeathersJS API back-end (single project).
+
+### Details
+
+  * Use [feathers-vuex](https://github.com/feathers-plus/feathers-vuex)
+  
+### Tests
+
+Repeat all tests from Spike 5, plus the following server-side rendered route tests:
+
+  * Access server-side rendered private route when authenticated: access allowed
+  * Access server-side rendered private route when unauthenticated: access denied
+  * Access server-side rendered public route: access allowed regardless of authentication state
+
+### Notes
+
+  * None yet.
+
+---
+
+# Week 1
+
 ## Spike 1: OpenCrypto in browser: key generation, persistence, & retrieval
 
 ![Authentication flow](/images/spikes/authentication.png)
@@ -198,77 +272,6 @@ Then, on our node:
   * We only saved the session key encrypted with the public key of the receiving server. In a real two way communication system, we should also encrypt the session key with the public key of the sending server. This encrypted session key should be stored together with the encrypted message on the sending server.
   * This spike only works with ASCII encoded strings, since we have to convert strings to base64. In future releases we should support UNICODE instead.
 
-# Week 2
-
-## General notes / conclusions
-
-![xkcd comic on password strength](/images/spikes/password_strength.png)
-
-The goal of this week is to take what we’ve learned from Week 1 and build upon that to spike out authentication with the tech stack that we’re considering (FeathersJS + Nuxt).
-
-Based on what we learned last week:
-
-### General cryptography policy
-
-Use best practices, do not roll any custom crypto:
-
-  * We use standard [libsodium](https://libsodium.org) methods
-  * We encourage use of strong passwords to project the account (e.g., see [zxcvbn](https://github.com/dropbox/zxcvbn); [blog post/demo](https://blogs.dropbox.com/tech/2012/04/zxcvbn-realistic-password-strength-estimation/))
-  * We use `crypto_pwhash` to derive the key we encrypt the private key with (uses Argon2)
-  * We use `crypto_sign_detached` to sign (uses Ed25519)
-  * We use `crypto_box_easy` to encrypt (uses X25519)
-  * We use one keypair (We will use libsodium’s built-in methods to convert the Ed25519 keys to Curve25519 keys for  for signing and Curve25519 for encryption.)
-
-## Spike 5: Publickey authentication with Feathers
-
-### Goals
-
-  * Sign in to a FeathersJS API from a single-page web app using a publickey authentication strategy.
-
-### Details
-
-  * Client: Use plain HTML, CSS, JavaScript (no framework)
-  * Use libsodium
-  * Adhere to general cryptography policy, above.
-
-### Tests
-
-  * Sign in (via sign-in form)
-  * Sign out (via sign-out button)
-  * Access public route: access allowed regardless of authentication state
-  * Access private route when authenticated: access allowed
-  * Access private route when unauthenticated: access denied
-
-### Notes
-
-  * None yet.
-
----
-
-## Spike 6: Publickey authentication with Feathers, Vuex, and Nuxt
-
-### Goals
-
-  * Build on Spike 5 to add Nuxt and Vuex
-  * Move from a client-side rendered FeathersJS/HTML single-page app to server-side rendered/universal Nuxt/Vuex client with FeathersJS API back-end (single project).
-
-### Details
-
-  * Use [feathers-vuex](https://github.com/feathers-plus/feathers-vuex)
-  
-### Tests
-
-Repeat all tests from Spike 5, plus the following server-side rendered route tests:
-
-  * Access server-side rendered private route when authenticated: access allowed
-  * Access server-side rendered private route when unauthenticated: access denied
-  * Access server-side rendered public route: access allowed regardless of authentication state
-
-### Notes
-
-  * None yet.
-
----
 
 ## Related resources
 
