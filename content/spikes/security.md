@@ -202,7 +202,7 @@ Then, on our node:
 
 ## General notes / conclusions
 
-![xkcd comic on password strength](./password_strength.png)
+![xkcd comic on password strength](/images/spikes/password_strength.png)
 
 The goal of this week is to take what we’ve learned from Week 1 and build upon that to spike out authentication with the tech stack that we’re considering (FeathersJS + Nuxt).
 
