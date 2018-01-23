@@ -80,6 +80,7 @@ Use best practices, do not roll any custom crypto:
 
   * Build on Spike 5 to add Nuxt and Vuex
   * Move from a client-side rendered FeathersJS/HTML single-page app to server-side rendered/universal Nuxt/Vuex client with FeathersJS API back-end (single project).
+  * Evaluate: FeathersJS/Nuxt/JWT publickey authentication – there seems to be issues with auth in Feathers/Nuxt integrations; can we work around those? Is this a good/stable stack?
 
 ### Details
 
