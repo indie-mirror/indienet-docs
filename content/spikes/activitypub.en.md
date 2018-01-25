@@ -50,6 +50,12 @@ https://source.ind.ie/indienet/spikes/activitypub
 
   * Currently lacking some ActivityPub vocabulary (and declared as looking for maintainers on the repo, although Evan Prodromou has been updating it recently). [See this issue](https://github.com/jasnell/activitystrea.ms/issues/24). [My fork.](https://github.com/aral/activitystrea.ms)
 
+### ActivityStreams test documents
+
+“Collection of documents for testing activity streams parsers”
+
+https://github.com/aral/activitystreams-test-documents
+
 ### ActivityPub-Mock
 
 Evan Prodromou has just created a project to help unit test ActivityPub implementations. This looks very useful for our use case.
