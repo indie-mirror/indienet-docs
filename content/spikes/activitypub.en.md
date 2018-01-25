@@ -46,6 +46,10 @@ https://source.ind.ie/indienet/spikes/activitypub
 
 ## Notes
 
+### ActivityStrea.ms library
+
+  * Currently lacking some ActivityPub vocabulary (and declared as looking for maintainers on the repo, although Evan Prodromou has been updating it recently). [See this issue](https://github.com/jasnell/activitystrea.ms/issues/24). [My fork.](https://github.com/aral/activitystrea.ms)
+
 ### ActivityPub-Mock
 
 Evan Prodromou has just created a project to help unit test ActivityPub implementations. This looks very useful for our use case.
@@ -53,7 +57,7 @@ Evan Prodromou has just created a project to help unit test ActivityPub implemen
 https://gitlab.com/aral/activitypub-mock
 
 
-### JSON Server
+### JSON Server
 
 “Get a full fake REST API with zero coding in less than 30 seconds (seriously)”
 
