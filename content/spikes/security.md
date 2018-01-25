@@ -97,6 +97,7 @@ Repeat all tests from Spike 5, plus the following server-side rendered route tes
 ### Resources
 
   * [Nuxt Authentication from Scratch](https://medium.com/@kasheftin/nuxt-authentication-from-scratch-a7a024c7201b): a good tutorial on implementing authentication with Nuxt.
+  * [feathers-nuxt](https://github.com/lewebsimple/feathers-nuxt)
 
 ### Notes
 
