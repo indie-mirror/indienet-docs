@@ -38,7 +38,7 @@ sequenceDiagram
 
 ## Onboarding scenarios
 
-### A. Synchronous
+### A. Synchronous
 
 1. You receive a message from the city via an out-of-band channel (snail mail, email, text message, etc.) with a unique, easier to type URL, valid for one domain and a web site on which to redeem it. (We could also include a QR code option so, e.g., people with iPhones could just point their camera at it to visit the URL.)
 
@@ -48,7 +48,7 @@ sequenceDiagram
 
 #### Design requirements
 
-1. Domain registration TTL close to zero (requires coordination with .Gent registrar – we are currently in talks)
+1. Domain registration TTL close to zero (requires coordination with .Gent registrar – we are currently in talks)
 
 2. Server instance TTL within above-stated 30 second period (this is not an unsolved problem – we could have a buffer of N instances ready to go at all times).
 
