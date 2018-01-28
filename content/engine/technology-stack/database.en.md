@@ -27,6 +27,10 @@ Related:
 
   * [HyperDB](https://github.com/mafintosh/hyperdb): “Distributed scalable database” (as used in [DAT project](https://datproject.org).)
 
+## Other data persistence solutions
+
+  * [Hoodie](hood.ie)
+
 ## RethinkDB
 
 RethinkDB is a realtime database that has a changefeeds feature that could simplify our production footprint/deployment requirements, server-side code dramatically and enable us to keep an event-driven workflow throughout.
