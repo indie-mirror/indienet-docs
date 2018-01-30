@@ -107,7 +107,10 @@ Repeat all tests from Spike 5, plus the following server-side rendered route tes
 
 ### Notes
 
-  *
+  * Nuxt is a good technology to render pages with public information. Since we use end-to-end encryption it is not possible, or even preferable to render/decrypt private messages on the server. Therefore we use client-side rendering for all private data.
+  * Nuxt-auth will not be used for this project, since all private data has to be rendered on the client, so it does not make sense to render pages for authenticated people on the server.
+  * If the client wants to access private data on the server. It has to authenticate through the JWT mechanism that has been implemented with the feathersJS framework as created in the previous spike.
+  * The standard custom-passport strategy generates 500 errors when a JWT token is not valid, malformed, or not present. Instead of this behavior we decided to send back 401 responses and log those 500 errors to the server.
 
 ---
 
