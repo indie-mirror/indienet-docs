@@ -70,7 +70,13 @@ Use best practices, do not roll any custom crypto:
 
 ### Notes
 
-  * None yet.
+  * Refactoring with libosodium has some pitfalls:
+    * The libsodium-wrappers.js uses a libsodium lib that has been compiled with certain presets. Due to these presets the maximum memory usage of certain algoritms is limited. As such we could not use several presets as defined in the documentation of libsodium and had to come up with our own limits in regards with memory usage. **Those values in keys.js should be verified by a  cryptographer!**
+    * The libsodium-wrappers.js has not been built with promises.
+  * Feathersjs authentication:
+    * It was not possible to use the built in passport strategies to authenticate in this particular case.
+    * To implement the described authentication flow we had to create a custom passport strategy and use the feathersjs framework to correctly pass various app variables inside our middleware. Additionally to make a route private you have to add the right hooks to your services.
+    * Additionally we created a hook to create a salt and store this in the app.settings variable. This salt is generated each time you log-in correctly and serves as the secret to generate a JWT to authenticate your session.
 
 ---
 
@@ -85,7 +91,7 @@ Use best practices, do not roll any custom crypto:
 ### Details
 
   * Use [feathers-vuex](https://github.com/feathers-plus/feathers-vuex)
-  
+
 ### Tests
 
 Repeat all tests from Spike 5, plus the following server-side rendered route tests:
@@ -101,7 +107,7 @@ Repeat all tests from Spike 5, plus the following server-side rendered route tes
 
 ### Notes
 
-  * None yet.
+  *
 
 ---
 
