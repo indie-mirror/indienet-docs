@@ -8,7 +8,7 @@ Indienet is an initiative led by [Ind.ie](https://ind.ie) and [The City of Ghent
 
 The goals of the project include:
 
-  * To create [an engine for creating federated personal web sites and apps](/engine) based on the W3C Proposed Recommendation [ActivityPub protocol](/engine/protocol).
+  * To create [an engine for creating federated personal web sites and apps](/engine) based on the W3C Proposed Recommendation [ActivityPub protocol](/engine/technology-stack/protocol).
 
   * To create [an implementation of a federated personal web site](/site) for individuals.
 
