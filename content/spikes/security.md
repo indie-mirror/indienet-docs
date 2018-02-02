@@ -43,6 +43,10 @@ Security goals for Indienet are:
   * What we’ve had to re-implment ourselves (e.g., build-wise, etc.)
   * General thoughts about the feel of working with pure Express vs Express + FeathersJS, vs Express + FeathersJS + Nuxt.
 
+### Notes
+
+  * None yet
+
 # Week 2
 
 ![xkcd comic on password strength](/images/spikes/password_strength.png)
