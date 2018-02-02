@@ -27,6 +27,22 @@ Security goals for Indienet are:
 
 * https://source.ind.ie/indienet/spikes/security
 
+# Week 3
+
+## Spike 7: Implement Spike 6 in pure Express
+
+### Goals
+
+  * Ascertain what value, if any, we get from FeathersJS
+  * Ascertain what value, if any, we get from Nuxt
+  * Weigh the additional weight of these libraries against the advantages
+
+### Document
+
+  * What we’ve lost by going from Feathers + Nuxt to Express
+  * What we’ve had to re-implment ourselves (e.g., build-wise, etc.)
+  * General thoughts about the feel of working with pure Express vs Express + FeathersJS, vs Express + FeathersJS + Nuxt.
+
 # Week 2
 
 ![xkcd comic on password strength](/images/spikes/password_strength.png)
