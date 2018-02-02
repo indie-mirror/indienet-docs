@@ -45,7 +45,32 @@ Security goals for Indienet are:
 
 ### Notes
 
-  * None yet
+  * This is similar to the way we implemented spike 1 to 4 except that we did not used vue.js or nuxt.js. As such it does not add a lot of value to reimplement the functionality on pure express, since most has already been done.
+
+### Comparison between both implementations (plain express vs. feathers.js)
+#### Express.js
+- Less dependencies.
+- More boilerplate code is necessary to create new routes and functionality.
+- It is more of a hassle to implement real-time communication inside of plain express.
+- You have to manually code hooks in express, which is cumbersome if you want to hook into a stream of realtime events, data. Such hooks will have to be defined to plug into an activity stream of another federated website inside the Indienet.
+- Express application generator is a rather minimal tool in regard to the feathers.js cli.
+- Express however is ultra-flexible and less opiniated then feathersJS.
+
+#### Feather.js
+- A very lightweight framework that adds a lot of added value to standard express.
+- Feathers is a bit more opiniated, but you can still use all express middleware you know and love if necessary.
+- It reduces the amount of boilerplate code a lot and it is very easy to quickly create new routes through its services layer. Additionally each route create through feathersJS services can be used in a real time application, which is a tremendous advantage.
+- FeathersJS implements a whole suite of hooks. Those hooks can be implemented application wide or service wide. This coupled with the fact that services are de facto real-time results in an easy and elegant implementation of datastreams.
+- FeathersJS has a real micro-architecture, and gives you the freedom to plugin other express based modules as well. This results in a framework that is easy to extend and mold to your needs.
+- The featherJS CLI is a great tool. It allows you to quickly generate routes, hooks, middleware etc. Greatly improving the ease to develop an API.
+
+#### Conclusion
+FeathersJS adds a layer on top of express.js that makes it more easy for developers to quickly build a prototype or a full blown API. It is still modular enough to extend with regular express middleware if necessary, has a great CLI and offers a lot of functionality out of the box.
+
+However it adds an extra level of abstraction to your code and pushes you in a certain direction while creating your app. This will make it a little more difficult to get into the code at first, but once used to it, it will increase productivity and enforce a nice and well structured code-base.
+
+Therefore we think it is a good idea to use the framework to its full potential in realizing our spikes and future Indienet projects.
+
 
 # Week 2
 
