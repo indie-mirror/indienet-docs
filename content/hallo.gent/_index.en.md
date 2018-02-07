@@ -3,23 +3,28 @@ title = "Hallo.gent"
 weight = "40"
 +++
 
-<img src='/images/iGent@3x.png' alt='iGent logo' style='width: 10vmax;'>
+<style>h1 { text-indent: -9999px; white-space: nowrap; overflow: hidden; height: 0;}</style>
 
-iGent is specific implementations of [Indienet Site](../site) and [Indienet Hub](../hub) for the [City of Ghent](https://stad.gent) in Belgium.
+<a href='https://source.ind.ie/indienet/hallo-gent'><img src='/images/hallo.gent-colour.png' alt='Hallo.gent logo' style='width: 20vmax;'></a>
 
-The goal is to empower the citizens of Ghent with their own place on the Internet, at their own domain which they own and control. This is a hosted, interoperable, federated, free and open, and easy to use system.
+<h2 style='color: black; font-size: 3vmax;'>Say hello to your friends, the city, and to the world.</h2>
+
+Hallo.gent empowers the citizens of the [City of Ghent](https://stad.gent) in Belgium with their own [federated personal web site](/site) at their own domain. It’s the home of Hallobot, who guides you seamlessly through the process of registering, setting up, and getting onto your own site.
 
 Citizens use their personal sites to interact with each other, with the greater fediverse (e.g., Mastodon), and with the departments and services (like Gentinfo) provided by the city of Ghent.
 
 This is the opposite of a Smart City platform. It’s a <strong>Smart Citizen</strong> platform.
 
-## Overview
+## Sequence diagrams
+
+### S1: Overview
 
 {{<mermaid align="left">}}
 sequenceDiagram
-  participant A as .Gent
+  participant A as .Gent TLD
   participant B as City
   participant C as Services
+  participant C2 as Hallo.gent
   participant D as Host
   participant E as Citizen
   participant F as Personal Site
@@ -28,13 +33,21 @@ sequenceDiagram
   A->>B: Domain names
   B-->C: (Provides)
   B->>E: Letter with redemption code
-  E->>D: Redeem code
-  E->>D: Choose Domain
-  D->>F: Setup site (<1 minute)
+  E->>C2: Redeem code
+  E->>C2: Choose Domain
+  C2->>D: Register domain
+  D->>D: Register domain (<1 min)
+  D->>D: Setup site (<30 seconds)
+  D->>C2: Site ready (see S2)
+  C2->>E: Site ready!
   E->>F: Use
   F->>C: Interact with
   F->>G: Interact with
 {{< /mermaid >}}
+
+### S2: Detail: Domain registry and site setup
+
+![Domain registry and site setup sequence diagram](/images/sequence-diagrams/hallo.gent/site-registration-blackbox-communication.svg)
 
 ## Onboarding scenarios
 
