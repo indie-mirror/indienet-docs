@@ -14,7 +14,7 @@ The goals of the project include:
 
   * To create [an implementation of a federated hub for organisations](/hub) (e.g., city departments, businesses, etc.) to enable them to engage in this federated landscape while respecting the rights of individual participants.
 
-  * [To empower the citizens of Ghent](/igent) with the option to have their own federated personal web site, at their own domain, that they can use to communicate with each other, with other people from around the world (using a shared protocol), and with the city.
+  * [To empower the citizens of Ghent](/hallo.gent) with the option to have their own federated personal web site, at their own domain, that they can use to communicate with each other, with other people from around the world (using a shared protocol), and with the city.
 
 ## Principles
 
