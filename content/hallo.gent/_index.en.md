@@ -15,6 +15,22 @@ Citizens use their personal sites to interact with each other, with the greater 
 
 This is the opposite of a Smart City platform. It’s a <strong>Smart Citizen</strong> platform.
 
+## Wireframes
+
+These are our initial thoughts on a friendly and seamless on-boarding process that takes people from the Hallo.gent site (which looks like an Indie Site) to your own Indie Site by customising it.
+
+### Hallobot onboarding: Step 1
+
+Get authorisation for free domain. (This is a mock of Onboarding Scenario A)
+
+![Hallobot onboarding: Step 1](/images/wireframes/hallo.gent/hallobot-onboarding.png)
+
+### Hallotbot onboarding: Step 2
+
+Pick a domain.
+
+![Hallobot onboarding: Step 2](/images/wireframes/hallo.gent/hallobot-onboarding.png) 
+
 ## Sequence diagrams
 
 ### S1: Overview
@@ -76,6 +92,10 @@ First two steps are the same as A.
 4. The web site informs you that you will receive an email (or a text message) when the site is ready.
 
 5. You get an email (or text message) when the web site is ready with a link to your own domain.
+
+### C. Geofenced
+
+Authorisation for a free Indie Site with a free .gent domain may also use geographical location as the criteria. This would also include people whom the city calls “users” (anyone who uses the City and its services). It could also provide a turism advantage (e.g., “take a little piece of the city with you…”, etc.)
 
 ## Welcome/setup experience on the site itself
 
