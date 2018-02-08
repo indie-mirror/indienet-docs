@@ -3,6 +3,8 @@ title = "Hub"
 weight = "30"
 +++
 
+**Needs design + further thought.**
+
 ![Hub basic overview diagram](/images/hub-overview-diagram.png)
 
 Indienet Hub is a federated hub for organisations. A Hub has administrators and members.
