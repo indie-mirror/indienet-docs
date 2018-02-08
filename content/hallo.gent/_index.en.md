@@ -17,7 +17,7 @@ This is the opposite of a Smart City platform. It’s a <strong>Smart Citizen</s
 
 ## Wireframes
 
-These are our initial thoughts on a friendly and seamless on-boarding process that takes people from the Hallo.gent site (which looks like an Indie Site) to your own Indie Site by customising it.
+These are our initial thoughts on a friendly and seamless on-boarding process that takes people from the Hallo.gent site (which looks like an Indie Site) to your own [Indie Site](/site) by customising it.
 
 ### Hallobot onboarding: Step 1
 
