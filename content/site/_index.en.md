@@ -3,7 +3,7 @@ title = "Site"
 weight = "20"
 +++
 
-Indienet Site is a federated personal web site that uses [Indienet Engine](../engine).
+Indie Site is a federated personal web site that uses [Indie Engine](../engine).
 
 ## Early Wireframes
 
