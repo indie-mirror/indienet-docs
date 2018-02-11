@@ -29,7 +29,7 @@ Get authorisation for free domain. (This is a mock of Onboarding Scenario A)
 
 Pick a domain.
 
-![Hallobot onboarding: Step 2](/images/wireframes/hallo.gent/hallobot-onboarding.png) 
+![Hallobot onboarding: Step 2](/images/wireframes/hallo.gent/hallobot-onboarding-2.png) 
 
 ## Sequence diagrams
 
