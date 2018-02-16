@@ -1,6 +1,5 @@
 +++
 title = "Docs"
-alwaysopen = "true"
 weight = "30"
 +++
 

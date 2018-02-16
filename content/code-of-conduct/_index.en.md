@@ -1,6 +1,6 @@
 +++
 title = "Code of Conduct"
-weight = "70"
+weight = "60"
 +++
 
 ## Creating a safe, positive space for everyone
