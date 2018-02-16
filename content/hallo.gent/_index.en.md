@@ -1,6 +1,6 @@
 +++
 title = "Hallo.gent"
-weight = "40"
+weight = "20"
 +++
 
 <style>h1 { text-indent: -9999px; white-space: nowrap; overflow: hidden; height: 0;}</style>

@@ -1,6 +1,6 @@
 +++
 title = "Indie Site"
-weight = "20"
+weight = "10"
 +++
 
 An indie site is a federated personal website (FPW).

@@ -1,6 +1,7 @@
 +++
 title = "Hub"
-weight = "30"
+weight = "20"
+alwaysopen = "true"
 +++
 
 **Needs design + further thought.**
