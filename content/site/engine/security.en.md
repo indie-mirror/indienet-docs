@@ -25,7 +25,7 @@ While these issues are blatantly apparent for web clients, they are also faced b
 
 ## Spikes
 
-  * Documentation: [/spikes/security](/spikes/security)
+  * Documentation: [/spikes/security](/other/spikes/security)
   * Source: https://source.ind.ie/indienet/spikes/security
 
 ## Resources

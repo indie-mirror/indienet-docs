@@ -8,7 +8,7 @@ alwaysopen = "true"
 
 ![Hub basic overview diagram](/images/hub-overview-diagram.png)
 
-Indienet Hub is a federated hub for organisations. A Hub has administrators and members.
+Indie Hub is a federated hub for organisations. A Hub has administrators and members.
 
 An administrator has privileges to add and remove members.
 

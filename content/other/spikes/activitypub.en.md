@@ -3,13 +3,13 @@ title = "ActivityPub"
 weight = "10"
 +++
 
-Explore ActivityPub implementation and interoperability (e.g., with Mastodon) for the [Indienet Engine](../../engine/) project.
+Explore ActivityPub implementation and interoperability (e.g., with Mastodon) for the [Indie Site](/site) project.
 
 ## Goals
 
-  * Get a feel for [ActivityPub](../../engine/technology-stack/protocol/) by hardcoding responses
+  * Get a feel for [ActivityPub](/site/engine/technology-stack/protocol/) by hardcoding responses
 
-  * Get a feel for the [Feathers](../../engine/technology-stack/framework/) framework
+  * Get a feel for the [Feathers](/site/engine/technology-stack/framework/) framework
 
   * Get interoperability working with [Mastodon](https://joinmastodon.org) and note any special cases
 

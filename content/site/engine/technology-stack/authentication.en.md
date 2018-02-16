@@ -5,9 +5,9 @@ weight = "30"
 
 The requirements for authentication are affected by the following requirements and aspects of the Indienet:
 
-  * Indienet sites/apps are federated personal web sites/apps, there is only a single owner that uses each site/app. (We do not have the concept of users and we do not need usernames.)
+  * Indie sites/apps are federated personal web sites/apps, there is only a single owner that uses each site/app. (We do not have the concept of users and we do not need usernames.)
 
-  * Private messages must be end-to-end encrypted (see [/engine/security](/engine/security) and [/spikes/security](/spikes/security))
+  * Private messages must be end-to-end encrypted (see [/site/engine/security](/site/engine/security) and [/other/spikes/security](/other/spikes/security))
 
   * Private messages must be accessible at any time in the future from the server from any authenticated client.
 
@@ -23,7 +23,7 @@ As such, the current plans for authentication are:
 
   4. The public key is also served at a well-known location on the server and is used by other clients to encrypt private messages for the owner of the instance.
 
-  (We are currently spiking this out. See [/spikes/security](/spikes/security))
+  (We are currently spiking this out. See [/other/spikes/security](/other/spikes/security))
 
 ## Client authentication
 
