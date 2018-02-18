@@ -23,13 +23,13 @@ These are our initial thoughts on a friendly and seamless on-boarding process th
 
 Get authorisation for free domain. (This is a mock of Onboarding Scenario A)
 
-![Hallobot onboarding: Step 1](/images/wireframes/hallo.gent/hallobot-onboarding.png)
+![Hallobot onboarding: Step 1](/images/wireframes/hallo.gent/hallobot-onboarding-step-1-inline-replies.png)
 
 ### Hallotbot onboarding: Step 2
 
 Pick a domain.
 
-![Hallobot onboarding: Step 2](/images/wireframes/hallo.gent/hallobot-onboarding-2.png) 
+![Hallobot onboarding: Step 2](/images/wireframes/hallo.gent/hallobot-onboarding-step-2-inline-replies.png) 
 
 ## Sequence diagrams
 
