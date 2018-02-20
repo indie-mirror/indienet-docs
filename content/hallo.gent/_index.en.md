@@ -55,6 +55,196 @@ A friendly and seamless on-boarding process that takes people from the Hallo.gen
 
 ![Hallobot onboarding: Step 6B-2](/images/wireframes/hallo.gent/hallobot-onboarding-6-not-ready-email-provided.png) 
 
+## Hallobot onboarding: script/text
+
+### Header
+
+#### Hallo.gent logo
+  * **English:** alt text: Hallo.gent logo: a speech bubble that says “hallo.gent”
+  * **Nederlands:** 
+
+#### Site title
+  * **English:** Say hello to your friends, the city, and to the world.
+  * **Nederlands:** 
+
+#### Site subtitle
+  * **English:** From your own home on the Web, courtesy of Stad Gent.
+  * **Nederlands:** 
+
+### Navigation
+
+#### Home
+  * **English:** Home
+  * **Nederlands:** 
+
+#### Mentions
+  * **English:** Mentions
+  * **Nederlands:** 
+
+#### Private
+  * **English:** Private
+  * **Nederlands:** 
+
+## Search
+  * **English:** Search
+  * **Nederlands:**
+
+### Hallobot Onboarding Script
+
+(Common interface elements: “x time ago”, “Reply”)
+
+#### Step 1
+
+**Hallobot**
+
+  * **English:** Hallo, I’m Hallobot. Did you get the secret code I mailed you
+  * **Nederlands:** 
+
+**Reply**
+
+  * **English:** [What secret code?] I did, it’s [enter code here] [Send]
+  * **Nederlands:**
+
+#### Step 2
+
+**Person**
+
+  * **English:** I did, it’s `{code}`!
+  * **Nederlands:**
+
+**Hallobot**
+
+  * **English:** Great! Let’s get you set up with your own web site. To start, you need to pick a domain name. This is the address of your site, where others will be able to find you.
+  * **Nederlands:**
+
+**Reply**
+
+  * **English:** I want the name [enter name].gent! {Available|Not Available}{✓|✗} [Send]
+  * **Nederlands:**
+
+#### Step 3
+
+**Person**
+
+  * **English:** I want the name `{domain}`!
+  * **Nederlands:**
+
+**Hallobot**
+
+  * **English:** OK, I’ve ordered the name for you. I’ll let you know when it’s ready. Now, let’s set up your site! Ready?
+  * **Nederlands:**
+
+**Reply**
+
+  * **English:** [Yes]
+  * **Nederlands:**
+
+#### Step 4
+
+**Person**
+
+  * **English:** Yes!
+  * **Nederlands:**
+
+**Hallobot**
+
+  * **English:** OK, to customise your site, press the Settings button shown by the arrow. When you’re ready, press the button again to exit Settings mode.
+  * **Nederlands:**
+
+#### Step 5 (Settings Screen)
+
+**Change your profile image**
+
+  * **English:** Change your profile image
+  * **Nederlands:**
+
+**Your name**
+
+  * **English:** Your Name
+  * **Nederlands:**
+
+**A short description of you**
+
+  * **English:** A short description of you
+  * **Nederlands:**
+
+**Change your background image**
+
+  * **English:** Change your background image
+  * **Nederlands:**
+
+**Navigation: Settings**
+
+Note: the wireframes are wrong, “Settings” should be the 4th item in the navigation bar and always be visible (disabled on the other steps). TODO: Update wireframes.
+
+  * **English:** Settings
+  * **Nederlands:**
+
+**Language (label)**
+  
+  * **English:** Language
+  * **Nederlands:** 
+
+**Language (combobox)**
+
+Contents:
+
+  * Nederlands
+  * English
+
+**Done (button)**
+
+  * **English:** Done
+  * **Nederlands:**
+
+#### Step 6
+
+**Person**
+
+  * **English:** Done!
+  * **Nederlands:**
+
+**Hallobot**
+
+  * **English:** Great… now there’s one last thing to customise to make this site truly yours. We have to change the address to your won domain. Let me check if the domain is ready…
+  * **Nederlands:**
+
+#### Step 6A
+
+**Hallobot**
+
+  * **English:** Your domain is ready! Ready to go there now?
+  * **Nederlands:**
+
+**Reply**
+
+  * **English:** [Yes]
+  * **Nederlands:**
+
+#### Step 6B
+
+**Hallobot**
+
+  * **English:** The domain is taking a little time to register. I’ll keep checking and let you know when it is ready. If you don’t want to wait, give me your email address and I’ll send you an email when it is ready.
+  * **Nederlands:**
+
+**Reply**
+
+  * **English:** Email me when it’s ready at [enter email address] [Submit]
+  * **Nederlands:**
+
+#### Step 6B-2
+
+**Person**
+
+  * **English:** Email me when it’s ready at `{email-address}`.
+  * **Nederlands:**
+
+**Hallobot**
+
+  * **English:** OK, I will email you when your domain is ready. You can go ahead and either close this window if you want or keep it open :)
+  * **Nederlands:**
+
 
 ## Sequence diagrams
 
