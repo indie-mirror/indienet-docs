@@ -15,21 +15,46 @@ Citizens use their personal sites to interact with each other, with the greater 
 
 This is the opposite of a Smart City platform. It’s a <strong>Smart Citizen</strong> platform.
 
-## Wireframes
+## Hallobot onboarding: wireframes
 
-These are our initial thoughts on a friendly and seamless on-boarding process that takes people from the Hallo.gent site (which looks like an Indie Site) to your own [Indie Site](/site) by customising it.
+A friendly and seamless on-boarding process that takes people from the Hallo.gent site (which looks like an Indie Site) to your own [Indie Site](/site) by customising it.
 
-### Hallobot onboarding: Step 1
+### Step 1: check authorisation for free domain
 
-Get authorisation for free domain. (This is a mock of Onboarding Scenario A)
+![Hallobot onboarding: Step 1](/images/wireframes/hallo.gent/hallobot-onboarding-1.png)
 
-![Hallobot onboarding: Step 1](/images/wireframes/hallo.gent/hallobot-onboarding-step-1-inline-replies.png)
+### Step 2: pick domain
 
-### Hallotbot onboarding: Step 2
+![Hallobot onboarding: Step 2](/images/wireframes/hallo.gent/hallobot-onboarding-2.png) 
 
-Pick a domain.
+### Step 3: domain registration started, introduce idea of customising the site
 
-![Hallobot onboarding: Step 2](/images/wireframes/hallo.gent/hallobot-onboarding-step-2-inline-replies.png) 
+![Hallobot onboarding: Step 3](/images/wireframes/hallo.gent/hallobot-onboarding-3.png) 
+
+### Step 4: lead person to the Settings screen to customise the site
+
+![Hallobot onboarding: Step 4](/images/wireframes/hallo.gent/hallobot-onboarding-4.png) 
+
+### Step 5: Settings screen
+
+![Hallobot onboarding: Step 5](/images/wireframes/hallo.gent/hallobot-onboarding-5.png) 
+
+### Step 6: Return from settings screen, check if domain is ready
+
+![Hallobot onboarding: Step 6](/images/wireframes/hallo.gent/hallobot-onboarding-6.png) 
+
+### Step 6A: Domain is ready
+
+![Hallobot onboarding: Step 6A](/images/wireframes/hallo.gent/hallobot-onboarding-6-ready.png) 
+
+### Step 6B: Domain is not ready yet
+
+![Hallobot onboarding: Step 6B](/images/wireframes/hallo.gent/hallobot-onboarding-6-not-ready.png) 
+
+### Step 6B-2: Person provides their email address for asynchronous notification
+
+![Hallobot onboarding: Step 6B-2](/images/wireframes/hallo.gent/hallobot-onboarding-6-not-ready-email-provided.png) 
+
 
 ## Sequence diagrams
 
