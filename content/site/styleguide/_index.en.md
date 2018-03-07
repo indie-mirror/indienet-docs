@@ -1,0 +1,104 @@
+---
+title: "Styleguides"
+date: 2018-03-06T13:47:49+01:00
+draft: true
+---
+
+## CSS Styleguide
+
+Below are the basic rules we use for writing CSS consistently.
+
+### Basics
+
+CSS is written to aid readability and findability through consistency.
+
+* Elements and curly brackets are always on their own lines.
+* Single-line comments are used to describe CSS on the line below.
+* Rules are always in alphabetical order, except 4-sided rules (margins, padding, borders) which are ordered by top, left, bottom, right, following the shorthand order. 
+* Don’t break comments or rules mid-line. Let rules fill full-width so developers can use their chosen word wrap length.
+
+```
+.element-on-its-own-line
+{ /* curly bracket on its own line to aid readability */
+    /* comment explains the line *below* */
+    /* rules are in alphabetical order */
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0;
+    /* padding, margin and border (4-sided) rules are in top-left-bottom-right order */
+    padding-top: 1em;
+    padding-left: 20%;
+    padding-bottom: 0;
+    padding-right: 2em;
+}
+```
+
+### Structure
+
+Elements are ordered from least specific to more specific, according to the cascade.
+
+#### Headings and comments
+
+Headings (as comments) are used to make it easy to skim-read and find specific rules. Use an empty line below every heading.
+
+* H2-level headings are in UPPERCASE, and use dashes to segment groups of rules.
+
+```
+/* 
+GENERAL RULES
+- - - - - - - - - - - - - - - - - - - - - - - - */
+```
+
+* H3-level headings are in sentence case, and use a shorter series of dashes to segment groups of rules.
+
+```
+/*
+Component name
+- - - - - - - - - - - - */
+
+Single line or multiline comments outside element refer to the element below. Use one line of space in between for readability.
+
+```
+/* Images are circular with grey border */
+
+img
+{
+    border: 1px solid grey;
+    border-radius: 50%;
+}
+```
+
+Single line comments inside element refer to the line below.
+
+```
+/* mask image into circle using borders */
+border-radius: 50%;
+```
+
+Avoid multi-line comments inside elements.
+
+### Naming coventions
+
+Naming conventions may be a bit over the top right now, I (Laura) am open to suggestions on how to work both with framework compatibility and customisation!
+
+For the sake of compatibility, class names follow the Bulma naming conventions.
+
+```
+<div class='card-content'>
+```
+
+When overriding Bulma’s CSS, we override on the Bulma classes.
+
+```
+.card-content
+{
+    /* override Bulma’s use of rems on font sizes so font scales according to our global styles */
+    font-size: 1em;
+}
+```
+
+When creating custom (non-Bulma) components, we follow a BEM-style naming convention. If we are making additions to a Bulma component, we add a BEM-style class name, and hook our styles on to that, in order to distinguish our styling choices from the Bulma styles.
+
+```
+<div class='card-content card__content'>
+```
