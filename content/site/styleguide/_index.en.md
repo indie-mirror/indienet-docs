@@ -58,7 +58,6 @@ Component name
 
 Single line or multiline comments outside element refer to the element below. Use one line of space in between for readability.
 
-```
 /* Images are circular with grey border */
 
 img
