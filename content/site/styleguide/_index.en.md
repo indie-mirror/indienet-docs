@@ -79,8 +79,6 @@ Avoid multi-line comments inside elements.
 
 ### Naming coventions
 
-Naming conventions may be a bit over the top right now, I (Laura) am open to suggestions on how to work both with framework compatibility and customisation!
-
 For the sake of compatibility, class names follow the Bulma naming conventions.
 
 ```
@@ -97,8 +95,8 @@ When overriding Bulma’s CSS, we override on the Bulma classes.
 }
 ```
 
-When creating custom (non-Bulma) components, we follow a BEM-style naming convention. If we are making additions to a Bulma component, we add a BEM-style class name, and hook our styles on to that, in order to distinguish our styling choices from the Bulma styles.
+When creating custom (non-Bulma) components, we follow the Bulma-style naming convention of lowercase hyphen-separated class names.
 
 ```
-<div class='card-content card__content'>
+<div class='profile-bio'>
 ```
