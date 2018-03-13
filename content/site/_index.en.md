@@ -3,57 +3,40 @@ title = "Indie Site"
 weight = "10"
 +++
 
-An indie site is a federated personal website (FPW).
+Indie Site is an implementation of a Federated Personal Web Site (FPWS).
 
-  * __Federated:__ the owners of indie sites can follow each other’s sites, talk to each other, and be notified of updates. Federation is achieved via the W3C ActivityPub protocol.
+But what is a Federated Personal Web Site? Good question. It’s:
 
-  * __Personal:__ an indie site is for one person only, the owner of the site. There is no concept of “users.”
+  * __Federated:__ FPWS owners can follow each other’s sites, talk to each other, and be notified of updates. Federation is achieved via the W3C ActivityPub protocol so they can also talk to any other ActivityPub compatible service (e.g., Mastodon).
 
-  * __Website:__ apart from the above two qualifications, an indie site is a regular website. It is build using web technologies and it is experienced through a web browsers. Indie site functionality can also be experienced via native apps that use its REST And WebSocket APIs.
+  * __Personal:__ An FPWS is for one person only: the owner of the site. It is a single-tenant application. We do not have (and do not want) the concept of “users.”
 
+  * __Web Site:__ apart from the above two qualifications, an FPWS is a regular web site. It is build using web technologies and experienced through a standard web browsers. Indie site functionality can also be experienced via native apps in the future that use its REST And WebSocket APIs.
 
-## Early Wireframes
+## Screenshots
 
-### Wide viewport
+Indie Site is currently under development. These are some screenshots of the progress. It is currently not ready for testing as key functionality still has to be integrated from our various spikes. We hope to have a very basic functional initial version by April 2018.
 
-![Indie Site Wireframe: wide viewport](/images/wireframes/indie-site/base-annotated.png)
+### Posting interface
 
-### Wide viewport (Laura’s annotations)
+The posting interface aims to be as unobtrusive as possible. We are experimenting with seamless What You See Is What You Get (WYSIWYG) Markdown support for advanced authors as well as a default experience that works for anyone, regardless of existing technical knowledge.
 
-![Indie Site Wireframe: wide viewport; Laura’s notes](/images/wireframes/indie-site/base-annotated-lauras-notes.png)
+![Indie Site Screenshot: posting interface](/images/screenshots/indie-site/post.jpg)
 
-#### To-do
+### Settings screen
 
-* [ ] Create issues from Laura’s notes
-* [ ] Update original wireframe accordingly
+The Settings screen is where you can customise the site’s background colour (soon to be the theme colour) or background image, your profile image, and your name and bio. All are optional.
 
-### Narrow viewport
+![Indie Site Screenshot: settings screen](/images/screenshots/indie-site/settings.jpg)
 
-![Indie Site Wireframe: narrow viewport](/images/wireframes/indie-site/base-narrow-viewport.png)
+### Initial setup
 
-## Early high-fidelity mocks
+Initial setup involves picking a strong password. This password is not stored anywhere and is used to encrypt your private key for storage on the server. (What that means is that once we have implemented private messages, no one else will have access to them but you.)
 
-### Dark bar
+![Indie Site Screenshot: initial setup](/images/screenshots/indie-site/setup.jpg)
 
-![Mock of an indie site header using a dark bar to offset text](/images/mock-ups/indie-site/header-mock-dark-overlay-brick-person.png)
+### Remote follow
 
-### Dark bar, blur
+As Indie Site is a _federated_ personal web site (FPWS), other people who have a FPWS, Indie Site, Mastodon, or any other ActivityPub-compatible site/app/account can follow you. (And you can follow them.)
 
-![Mock of an indie site header using a dark bar to offset text and a blur on the background image](/images/mock-ups/indie-site/header-mock-dark-overlay-aral.png)
-
-### No bar, single colour (red)
-
-![Mock of an indie site header using a single colour and no dark bar to offset set](/images/mock-ups/indie-site/header-mock-red-background-no-dark-bar.png)
-
-### No bar, single black (red)
-
-![Mock of an indie site header using a single colour and no dark bar to offset set](/images/mock-ups/indie-site/header-mock-black-background-no-dark-bar.png)
-
-### No bar, single white (red)
-
-![Mock of an indie site header using a single colour and no dark bar to offset set](/images/mock-ups/indie-site/header-mock-white-background-no-dark-bar.png)
-
-## Technology stack
-
-  * Engine (see [technology stack](../engine/technology-stack))
-  * [Nuxt](https://nuxtjs.org)
+![Indie Site Screenshot: remote follow](/images/screenshots/indie-site/remote-follow.jpg)
