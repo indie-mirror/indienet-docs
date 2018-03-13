@@ -4,17 +4,16 @@ title = "Indienet"
 
 # Indienet
 
-Indienet is an initiative led by [Ind.ie](https://ind.ie) and [The City of Ghent](https://stad.gent) to explore the development of new personal networking solutions to empower individuals and citizens with agency and autonomy in the digital age.
+Indienet is an initiative led by [Ind.ie](https://ind.ie) and [The City of Ghent](https://stad.gent) to explore the development and deployment of Federated Personal Web Sites (FPWS) to empower citizens with individual sovereignty, agency, and autonomy in the digital age.
 
-The goals of the project include:
+The goals of the project are:
 
-  * To create [an engine for creating federated personal web sites and apps](/engine) based on the W3C Proposed Recommendation [ActivityPub protocol](/engine/technology-stack/protocol).
+  * [Indie Site](/site): To design, define, and create an initial implementation of a Federated Personal Web Site (FPWS). The implementation is being created in the open and under a free software license (AGPL) and based on the W3C Proposed Recommendation [ActivityPub protocol](/engine/technology-stack/protocol).
 
-  * To create [an implementation of a federated personal web site](/site) for individuals.
+  * [Hallo.gent](/hallo.gent): To enable the citizens of Ghent to have their own Federated Personal Web Site, at their own .Gent domain that they can use to communicate with each other, with the city, and with people from around the world.
 
-  * To create [an implementation of a federated hub for organisations](/hub) (e.g., city departments, businesses, etc.) to enable them to engage in this federated landscape while respecting the rights of individual participants.
+  * To explore the use of Federated Personal Web Sites and, possibly, [hubs and aggregators](/hub) built around them by city departments, businesses, etc., to engage with citizens in this federated landscape while inherently respecting their privacy and other fundamental human rights.
 
-  * [To empower the citizens of Ghent](/hallo.gent) with the option to have their own federated personal web site, at their own domain, that they can use to communicate with each other, with other people from around the world (using a shared protocol), and with the city.
 
 ## Principles
 
