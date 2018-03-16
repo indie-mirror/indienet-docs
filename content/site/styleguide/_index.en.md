@@ -1,10 +1,10 @@
 ---
-title: "Styleguides"
+title: "Style Guides"
 date: 2018-03-06T13:47:49+01:00
 draft: false
 ---
 
-## CSS Styleguide
+## CSS Style Guide
 
 Below are the basic rules we use for writing CSS consistently.
 
