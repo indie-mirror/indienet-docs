@@ -18,8 +18,7 @@ CSS is written to aid readability and findability through consistency.
 * Don’t break comments or rules mid-line. Let rules fill full-width so developers can use their chosen word wrap length.
 
 ```
-.element-on-its-own-line
-{ /* curly bracket on its own line to aid readability */
+.element {
     /* comment explains the line *below* */
     /* rules are in alphabetical order */
     font-size: 1em;
