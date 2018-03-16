@@ -84,7 +84,7 @@ For the sake of compatibility, class names follow the Bulma naming conventions.
 <div class='card-content'>
 ```
 
-When overriding Bulma’s CSS, we override on the Bulma classes.
+When overriding Bulma’s CSS, we override on the Bulma classes. *(While the example illustrates the point, we no longer override `rem`s for `em`s!)*
 
 ```
 .card-content
@@ -99,3 +99,11 @@ When creating custom (non-Bulma) components, we follow the Bulma-style naming co
 ```
 <div class='profile-bio'>
 ```
+
+### Units
+
+We use `rem`s everywhere to keep our sizes relative to the root font size. This means that:
+
+* All sizes will be relative to a person’s minimum font size as chosen in their browser settings.
+* The entirety of the interface can be scaled using one media query to adjust the root font size.
+* Values are always consistent and proportional to other values.
