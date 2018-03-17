@@ -1,6 +1,6 @@
-+++
-title = "Indienet"
-+++
+---
+title: "Indienet"
+---
 
 # Indienet
 
@@ -31,5 +31,7 @@ This living documentation is an important part of the initiative and evolves as 
   * [Indienet group](https://source.ind.ie/indienet)
 
 Please note that the project itself and this documentation are in a constant state of development.
+
+## Sections
 
 {{% children %}}

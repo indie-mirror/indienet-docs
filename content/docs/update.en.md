@@ -1,7 +1,7 @@
-+++
-title = "Update"
-weight = "40"
-+++
+---
+title: "Update"
+weight: 40
+---
 
 Run the `./update` script.
 

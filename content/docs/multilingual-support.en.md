@@ -1,7 +1,7 @@
-+++
-title = "Multilingual Support"
-weight = "60"
-+++
+---
+title: "Multilingual Support"
+weight: 60
+---
 
 The docs are currently only in English.
 

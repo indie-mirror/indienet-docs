@@ -1,7 +1,7 @@
-+++
-title = "Security"
-weight = "20"
-+++
+---
+title: "Security"
+weight: 20
+---
 
 ## Goals
 

@@ -1,7 +1,7 @@
-+++
-title = "Commons Gent"
-weight = "20"
-+++
+---
+title: "Commons Gent"
+weight: 20
+---
 
 Notes from the meeting on 2018/01/11.
 

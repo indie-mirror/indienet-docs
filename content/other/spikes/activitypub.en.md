@@ -1,7 +1,7 @@
-+++
-title = "ActivityPub"
-weight = "10"
-+++
+---
+title: "ActivityPub"
+weight: 10
+---
 
 Explore ActivityPub implementation and interoperability (e.g., with Mastodon) for the [Indie Site](/site) project.
 

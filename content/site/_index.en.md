@@ -1,7 +1,7 @@
-+++
-title = "Indie Site"
-weight = "10"
-+++
+---
+title: "Indie Site"
+weight: 10
+---
 
 Indie Site is an implementation of a Federated Personal Web Site (FPWS).
 
@@ -12,6 +12,10 @@ But what is a Federated Personal Web Site? Good question. It’s:
   * __Personal:__ An FPWS is for one person only: the owner of the site. It is a single-tenant application. We do not have (and do not want) the concept of “users.”
 
   * __Web Site:__ apart from the above two qualifications, an FPWS is a regular web site. It is build using web technologies and experienced through a standard web browsers. Indie site functionality can also be experienced via native apps in the future that use its REST And WebSocket APIs.
+
+## Sections
+
+{{% children %}}
 
 ## Screenshots
 

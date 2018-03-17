@@ -1,7 +1,8 @@
 ---
-title: "Style Guides"
+title: "Style Guide"
 date: 2018-03-06T13:47:49+01:00
 draft: false
+weight: 20
 ---
 
 ## CSS Style Guide

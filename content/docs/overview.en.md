@@ -1,7 +1,7 @@
-+++
-title = "Overview"
-weight = "10"
-+++
+---
+title: "Overview"
+weight: 10
+---
 
 Docs is built using [Hugo](https://gohugo.io). See the Hugo [quick start guide](https://gohugo.io/getting-started/quick-start/) to install Hugo on your system.
 

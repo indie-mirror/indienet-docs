@@ -1,8 +1,8 @@
-+++
-title = "Spikes"
-weight = "10"
-alwaysopen = "true"
-+++
+---
+title: "Spikes"
+weight: 10
+alwaysopen: "true"
+---
 
 <img src='/images/Spikes@3x.png' alt='Indienet Spikes logo' style='width: 14vmax; margin-top: 0;'>
 

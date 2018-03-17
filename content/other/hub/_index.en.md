@@ -1,8 +1,8 @@
-+++
-title = "Hub"
-weight = "20"
-alwaysopen = "true"
-+++
+---
+title: "Hub"
+weight: 20
+alwaysopen: "true"
+---
 
 **Needs design + further thought.**
 

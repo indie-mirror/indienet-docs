@@ -1,7 +1,7 @@
-+++
-title = "Deploy"
-weight = "50"
-+++
+---
+title: "Deploy"
+weight: 50
+---
 
 If you have deployment privileges, run the `./deploy` script.
 

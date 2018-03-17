@@ -1,7 +1,7 @@
-+++
-title = "Develop"
-weight = "30"
-+++
+---
+title: "Develop"
+weight: 30
+---
 
 Run the `./dev` script.
 

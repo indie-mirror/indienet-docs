@@ -1,7 +1,7 @@
-+++
-title = "Gent Info"
-weight = "10"
-+++
+---
+title: "Gent Info"
+weight: 10
+---
 
 Notes from meetings on 2018/01/10-11.
 

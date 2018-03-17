@@ -1,7 +1,7 @@
-+++
-title = "Install"
-weight = "20"
-+++
+---
+title: "Install"
+weight: 20
+---
 
 1. [Install Hugo](https://gohugo.io/getting-started/installing/)
 

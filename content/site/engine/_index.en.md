@@ -1,14 +1,8 @@
-+++
-title = "Engine"
-weight = "10"
-+++
+---
+title: "Engine"
+weight: 100
+---
 
-<img src='/images/Engine@3x.png' alt='Indienet Engine logo' style='width: 12vmax; margin-top: 0;'>
-
-[ActivityPub](https://www.w3.org/TR/activitypub/) implementation in JavaScript (ES6) for use in Indie apps and sites.
-
-Indie apps are federated personal web-apps (or sites) (FPW) that are built for use by a single person.
-
-Current activity is in the [ActivityPub spike](/other/spikes/activitypub/).
+**Note:** This section is currently outdated and needs to be incorporated into the main Indie Site page as the engine is no longer a separate component.
 
 {{% children  %}}
