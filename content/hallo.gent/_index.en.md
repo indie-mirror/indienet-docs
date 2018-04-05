@@ -5,7 +5,7 @@ weight: 20
 
 <style>h1 { text-indent: -9999px; white-space: nowrap; overflow: hidden; height: 0;}</style>
 
-<a href='https://source.ind.ie/indienet/hallo-gent'><img src='/images/hallo.gent-colour.png' alt='Hallo.gent logo' style='width: 20vmax;'></a>
+<a href='https://source.ind.ie/indienet/hallo-gent'><img src='/images/hallo.gent-circular.svg' alt='Hallo.gent logo' style='width: 20vmax;'></a>
 
 <h2 style='color: black; font-size: 3vmax;'>Say hello to your friends, the city, and to the world.</h2>
 
@@ -314,7 +314,7 @@ First two steps are the same as A.
 
 ### C. Geofenced
 
-Authorisation for a free Indie Site with a free .gent domain may also use geographical location as the criteria. This would also include people whom the city calls “users” (anyone who uses the City and its services). It could also provide a turism advantage (e.g., “take a little piece of the city with you…”, etc.)
+Authorisation for a free Indie Site with a free .gent domain may also use geographical location as the criteria. This would also include people whom the city calls “users” (anyone who uses the City and its services). It could also provide a tourism advantage (e.g., “take a little piece of the city with you…”, etc.)
 
 ## Welcome/setup experience on the site itself
 
