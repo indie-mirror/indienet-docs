@@ -9,11 +9,15 @@ weight: 20
 
 <h2 style='color: black; font-size: 3vmax;'>Say hello to your friends, the city, and to the world.</h2>
 
-Hallo.gent empowers the citizens of the [City of Ghent](https://stad.gent) in Belgium with their own [federated personal website](/site) (FPW) at their own domain. It’s the home of Hallobot, who guides you seamlessly through the process of registering, setting up, and getting onto your own site.
+Hallo.gent empowers the citizens of the [City of Ghent](https://stad.gent) in Belgium with their own [federated personal web site](/site) (FPWS) at their own domain. It’s the home of Hallobot, who guides you seamlessly through the process of registering, setting up, and getting started with your own [Indie Site](/site).
 
-Citizens use their personal sites to interact with each other, with the greater fediverse (e.g., Mastodon), and with the departments and services (like Gentinfo) provided by the city of Ghent.
+Our goal is to get this process down to a matter of a minute or two.
 
-This is the opposite of a Smart City platform. It’s a <strong>Smart Citizen</strong> platform.
+Citizens use their personal sites to interact with each other, with the greater fediverse (e.g., Mastodon), and with the City of Ghent.
+
+This is the opposite of a “smart city” platform.
+
+It’s a <strong>Smart Citizen</strong> platform.
 
 ## Hallobot onboarding: wireframes
 

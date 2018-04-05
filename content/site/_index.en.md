@@ -19,7 +19,7 @@ But what is a Federated Personal Web Site? Good question. It’s:
 
 ## Screenshots
 
-Indie Site is currently under development. These are some screenshots of the progress. It is currently not ready for testing as key functionality still has to be integrated from our various spikes. We hope to have a very basic functional initial version by April 2018.
+Indie Site is currently under development. These are some screenshots of the progress. It is currently not ready for testing as key functionality still has to be integrated from our various spikes. We hope to have a very basic functional initial version in April 2018.
 
 ### Posting interface
 

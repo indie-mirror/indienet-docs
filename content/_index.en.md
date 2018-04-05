@@ -4,15 +4,33 @@ title: "Indienet"
 
 # Indienet
 
-Indienet is an initiative led by [Ind.ie](https://ind.ie) and [The City of Ghent](https://stad.gent) to explore the development and deployment of Federated Personal Web Sites (FPWS) to empower citizens with individual sovereignty, agency, and autonomy in the digital age.
+Indienet is an initiative led by [Indie](https://ind.ie) and [The City of Ghent](https://stad.gent) to explore the development and deployment of Federated Personal Web Sites (FPWS) to empower people with [individual sovereignty and a healthy commons](https://ar.al/notes/encouraging-individual-sovereignty-and-a-healthy-commons/) in the digital, networked age.
 
-The goals of the project are:
+The initiative is being led by [Aral Balkan](https://ar.al) with invaluable support in Ghent from Martine Delannoy, Chief of Foresight, and Karl-Filip Coenegrachts, Head of Strategy at the City of Ghent.
 
-  * [Indie Site](/site): To design, define, and create an initial implementation of a Federated Personal Web Site (FPWS). The implementation is being created in the open and under a free software license (AGPL) and based on the W3C Proposed Recommendation [ActivityPub protocol](/engine/technology-stack/protocol).
+The initiative began in mid-January and is at an exploratory stage.
 
-  * [Hallo.gent](/hallo.gent): To enable the citizens of Ghent to have their own Federated Personal Web Site, at their own .Gent domain that they can use to communicate with each other, with the city, and with people from around the world.
+[Development](https://source.ind.ie/indienet) is being carried out by two small teams: Indie in Cork, Ireland, is working on [Indie Site](/site) and the Smart Citizen Lab at The City of Ghent in Ghent, Belgium is working on [Hallo.gent](/hallo.gent). We are also working with [Combell](https://combell.gent), patron of the .Gent top-level domain on behalf of the City of Ghent.
 
-  * To explore the use of Federated Personal Web Sites and, possibly, [hubs and aggregators](/hub) built around them by city departments, businesses, etc., to engage with citizens in this federated landscape while inherently respecting their privacy and other fundamental human rights.
+## Indie Site
+
+Design, define, and develop a [Federated Personal Web Site (FPWS)](/site) platform. Development is carried out in the open and is published under the AGPL free software license. Federation is based on the [ActivityPub](/engine/technology-stack/protocol) W3C Recommendation.
+
+  * More info: [Indie Site](/site)
+  * Source: [source.ind.ie/indienet/site](https://source.ind.ie/indienet/site)
+
+## Hallo.gent
+
+The City of Ghent does not aspire to be a panopticon-like, surveillance-based “smart city”. We reject the unethical business model of [surveillance capitalism](https://ar.al/notes/the-nature-of-the-self-in-the-digital-age/) espoused by Silicon Valley.
+
+We don’t want the City and our industry partners to become smarter about our citizens; we want our citizens to become smarter about themselves. Our goal is to empower our citizens with technology that <em>they</em> own and control. Instead of a “smart city”, we want <strong>smart citizens</strong>.
+
+The first step in this mission is to empower the citizens of Ghent with their own place on the Web – their own [Indie Site](/site) at their own domain. This is a node in a federated web-based network where people can communicate with each other, the city, and with the world in general.
+
+To realise this vision, we are working with [Indie](https://ind.ie), our new Smart Citizen Lab, and [Combell](https://combell.gent), patrons of the .Gent top-level domain.
+
+  * More info: [Hallo.gent](/hallo.gent)
+  * Source: [source.ind.ie/indienet/hallo-gent](https://source.ind.ie/indienet/hallo-gent)
 
 
 ## Principles
