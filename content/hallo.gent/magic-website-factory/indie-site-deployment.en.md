@@ -23,13 +23,29 @@ Here, we present the requirements for Indie Site configuration.
 
 ## Configuration
 
-Indie Site expects its configuration data to be accessible from the following directory, which must be set up by the Magic Website Factory.
+Indie Site expects its configuration data to be accessible from the following directory, which must be set up by the Magic Website Factory:
 
-`~/indie/v1/`
+```bash
+~/indie
+```
 
 Inside that directory, it expects the following file:
 
-`owner-settings.json`: the owner settings that were passed to the [Magic Website Factory Site Service (POST) method](../api/#site-service)
+```bash
+~/indie/owner-settings.json
+```
+
+The `owner-settings.json` file contains the owner settings that were passed to the [Magic Website Factory Site Service (POST) method](../api/#site-service)
+
+The owner settings object that is passed only contains the `<secret sign-up code>`, so the _~/indie/owner-settings.json_ in a configured Indie Site instance should match the following:
+
+```json
+{
+  "secretSignupCode": "<secret-sign-up-code>"
+}
+```
+
+Indie Site uses the `secretSignupCode` to authenticate the initial configuration call from Hallo.gent. Unless the secret sign-up code passed matches the one in _~/indie/owner-settings.json_, attempts to configure the new site are refused. This is to prevent an edge-case where a malicious actor might gain access and ownership of newly-created Indie Sites before the legitimate owner has had a chance to set up their password and claim ownership.
 
 ## Running
 

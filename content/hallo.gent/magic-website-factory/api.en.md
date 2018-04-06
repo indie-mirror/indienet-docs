@@ -3,9 +3,9 @@ title: "API"
 weight: 10
 ---
 
-All API calls require the passing of a secret that authenticates them. For the test server, this secret is hardcoded.
+All API calls require the passing of a cryptographically-secure shared secret access token to authenticate them. The secret access token is communicated out of band via a cryptographically secure channel between Hallo.gent (Smart Citizen Lab at Stad Gent) and the Magic Website Factory (Combell). For the test server, a mock secret access token is hardcoded.
 
-`secret = "<secret>"`
+All communication is over TLS (HTTPS) only. Server setups on both ends have HTTP access disabled.
 
 ## API versioning
 
@@ -28,21 +28,21 @@ Check if the domain is available. Returns a JSON object with a boolean status.
 
 #### Parameters
 
-`/domain/<domain>?secret=<secret>`
+`/domain/<domain>?secret=<secret-access-token>`
 
 Where the following known values for `domain` returns the following responses:
 
 #### Responses
 
-* available.gent: `{"status": true}`
-* unavailable.gent: `{"status": false}`
-* error.gent: triggers the 503 service unavailable error.
+* Domain available: `{"available": true}`
+* Domain not available: `{"available": false}`
+* Domain check service not functional/available: 503 Service Unavailable error.
 
-On error, the server should return a valid error message.
+On the testing servers, the following known values for `domain` returns the following responses:
 
-Valid errors:
-
-* 503: Service unavailable. The domain check/registration service is unavailable.
+* available.gent: `{"available": true}`
+* unavailable.gent: `{"available": false}`
+* error.gent: 503 Service Unavailable error.
 
 ## Site service
 
@@ -52,18 +52,16 @@ Location: `/site`
 
 Asks for the passed domain to be registered and for an Indie Site to be set up at it.
 
-#### Parameters
+#### Parameters (Body; JSON)
 
 ```json
   {
     "domain": "<the domain to register (string)>",
     "callback": "<callback URL>",
     "owner-settings": {
-      // Object with owner settings, to be copied
-      // into the ~/indie/v1/owner-settings.json file
-      // at deployment time.
+      "secretSignUpCode": "<secret-sign-up-code>"
     },
-    "secret": "<secret>"
+    "secret": "<secret-access-token>"
   }
 ```
 
@@ -85,7 +83,7 @@ Location: `<callback-url>/site/`
 
 * `<callback-url>/site/<domain>`: domain to update the status for
 * `?status=<code>`: 201 = created, 409 = conflict (domain not available), 500 = internal server error (the site setup process failed and will not be retried)
-* `&secret=<secret>`
+* `&secret=<secret-access-token>`
 
 #### Responses
 
@@ -93,3 +91,5 @@ The Magic Website Factory expects the following responses to its callback reques
 
 * 200 OK: Response successfully received
 * Error code (depending on error): callback failed. Log the error and queue the callback to be tried again (exponential falloff).
+
+(When a 200 OK response is received, Hallo.gent POSTs the full owner settings, along with the secret sign-up code to the Indie Site. The Indie Site will then prompt for password creation and complete its configuration.)
