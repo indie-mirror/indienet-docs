@@ -3,13 +3,27 @@ title: "API"
 weight: 10
 ---
 
-All API calls require the passing of a cryptographically-secure shared secret access token to authenticate them. The secret access token is communicated out of band via a cryptographically secure channel between Hallo.gent (Smart Citizen Lab at Stad Gent) and the Magic Website Factory (Combell). For the test server, a mock secret access token is hardcoded.
+This document describes the public interface between an Indie Site installer and its Magic Website Factory.
+
+For the purposes of the first implementation currently being developed in Ghent, the Indie Site installer is Hallo.gent and the Magic Website Factory is Combell.
+
+## Security
 
 All communication is over TLS (HTTPS) only. Server setups on both ends have HTTP access disabled.
 
+## Authentication
+
+All call between servers MUST pass a cryptographically-secure shared secret access token for authentication. The secret access token is created and initially communicated out of band via a cryptographically secure channel between Hallo.gent (Smart Citizen Lab at Stad Gent) and the Magic Website Factory (Combell). For authentication purposes, the secret access token is provided in the Authorization header of all calls between the servers.
+
+```
+Authorization: Bearer <secret-access-token>
+```
+
+For local development-time testing, a mock secret access token is hardcoded between Hallo.gent and the local testing version of Magic Website Factory.
+
 ## API versioning
 
-The API endpoints should be versioned, starting with the current version at `/v1`. All locations, below, should be prefixed with the version identifier.
+The API endpoints should be versioned, starting with the current version at `/v1`. All locations, below, must be prefixed with the version identifier.
 
 e.g., https://live.magicwebsitefactory.gent/v1/domain
 
@@ -28,7 +42,7 @@ Check if the domain is available. Returns a JSON object with a boolean status.
 
 #### Parameters
 
-`/domain/<domain>?secret=<secret-access-token>`
+`/domain/<domain>`
 
 Where the following known values for `domain` returns the following responses:
 
@@ -52,16 +66,17 @@ Location: `/site`
 
 Asks for the passed domain to be registered and for an Indie Site to be set up at it.
 
+The secret sign-up code is the code that the person used to claim their Indie Site from Hallo.gent.
+
+When the Magic Website Factory receives a successfully-authenticated call, it returns a synchronous response (see below). It then, asynchronously, registers the requested domain name, [deploys and configures](api) an [Indie Site](/site) instance at it, and calls the passed callback URL with the status of the operation.
+
 #### Parameters (Body; JSON)
 
 ```json
   {
     "domain": "<the domain to register (string)>",
     "callback": "<callback URL>",
-    "owner-settings": {
-      "secretSignUpCode": "<secret-sign-up-code>"
-    },
-    "secret": "<secret-access-token>"
+    "installerSecret": "<secret sign-up code>"
   }
 ```
 
@@ -83,7 +98,6 @@ Location: `<callback-url>/site/`
 
 * `<callback-url>/site/<domain>`: domain to update the status for
 * `?status=<code>`: 201 = created, 409 = conflict (domain not available), 500 = internal server error (the site setup process failed and will not be retried)
-* `&secret=<secret-access-token>`
 
 #### Responses
 
