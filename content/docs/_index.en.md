@@ -1,6 +1,6 @@
 ---
 title: "Docs"
-weight: 40
+weight: 70
 ---
 
 <img src='/images/Docs@3x.png' alt='Indienet Docs logo' style='width: 14vmax; margin-top: 0;'>

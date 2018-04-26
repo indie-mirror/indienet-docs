@@ -3,9 +3,7 @@ title: "API"
 weight: 10
 ---
 
-This document describes the public interface between an Indie Site installer and its Magic Website Factory.
-
-For the purposes of the first implementation currently being developed in Ghent, the Indie Site installer is Hallo.gent and the Magic Website Factory is Combell.
+This document describes the public interface between [Indie Onboarder](/onboarder) and its [Magic Website Factory](/magic-website-factory).
 
 ## Security
 
@@ -13,7 +11,7 @@ All communication is over TLS (HTTPS) only. Server setups on both ends have HTTP
 
 ## Authentication
 
-All call between servers MUST pass a cryptographically-secure shared secret access token for authentication. The secret access token is created and initially communicated out of band via a cryptographically secure channel between Hallo.gent (Smart Citizen Lab at Stad Gent) and the Magic Website Factory (Combell). For authentication purposes, the secret access token is provided in the Authorization header of all calls between the servers.
+All calls between servers MUST pass a cryptographically-secure shared secret access token for authentication. The secret access token is created and initially communicated out of band via a cryptographically secure channel between Hallo.gent (Smart Citizen Lab at Stad Gent) and the Magic Website Factory (Combell). For authentication purposes, the secret access token is provided in the Authorization header of all calls between the servers.
 
 ```
 Authorization: Bearer <secret-access-token>
