@@ -1,6 +1,6 @@
 ---
 title: "Code of Conduct"
-weight: 60
+weight: 100
 ---
 
 ## Creating a safe, positive space for everyone

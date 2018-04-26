@@ -1,6 +1,6 @@
 ---
 title: "Other"
-weight: 50
+weight: 90
 ---
 
 Other miscellaneous, of secondary importance, and possibly older material.

@@ -1,6 +1,6 @@
 ---
 title: "Magic Website Factory"
-weight: 10
+weight: 30
 ---
 
 The Magic Website Factory is used to query for .Gent domain availability and to request domain registration and Indie Site setup.
