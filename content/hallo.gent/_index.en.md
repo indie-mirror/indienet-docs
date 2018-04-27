@@ -19,6 +19,37 @@ This is the opposite of a “smart city” platform.
 
 It’s a <strong>Smart Citizen</strong> platform.
 
+## Hallo.gent screenshots
+
+[Hallo.gent](https://hallo.gent) is currently running a demonstration version of the site. No new domains are registered or sites set up while using it but you can play with it to test the flow. The available.gent site is not currently set up to receive the Settings customisations carried out on Hallo.gent.
+
+These are screenshots from the demonstration:
+
+#### 1: Check authorisation for free domain
+
+![Hallo.gent screenshot: 1](/images/screenshots/hallo.gent/step-1.jpg)
+
+#### 2: Pick domain
+
+![Hallo.gent screenshot: 2](/images/screenshots/hallo.gent/step-2.jpg)
+
+#### 3: Domain registration started, introduce idea of customising the site
+
+![Hallo.gent screenshot: 3](/images/screenshots/hallo.gent/step-3.jpg)
+
+#### 4: Settings screen
+
+![Hallo.gent screenshot: 4](/images/screenshots/hallo.gent/step-4.jpg)
+
+#### 5: Setttings screen (customised)
+
+![Hallo.gent screenshot: 5](/images/screenshots/hallo.gent/step-5.jpg)
+
+#### 6: Returned from settings screen, domain is ready
+
+![Hallo.gent screenshot: 6](/images/screenshots/hallo.gent/step-6.jpg)
+
+
 ## Hallobot onboarding: wireframes
 
 A friendly and seamless on-boarding process that takes people from the Hallo.gent site (which looks like an Indie Site) to your own [Indie Site](/site) by customising it.
