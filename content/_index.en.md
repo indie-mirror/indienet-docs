@@ -4,13 +4,11 @@ title: "Indienet"
 
 # Indienet
 
-Indienet is an initiative led by [Indie](https://ind.ie) and [The City of Ghent](https://stad.gent) to explore the development and deployment of Federated Personal Web Sites (FPWS) to empower people with [individual sovereignty and a healthy commons](https://ar.al/notes/encouraging-individual-sovereignty-and-a-healthy-commons/) in the digital, networked age.
+Indienet is an initiative led by [Indie](https://ind.ie) to explore the development and deployment of Federated Personal Web Sites (FPWS) to empower people with [individual sovereignty and a healthy commons](https://ar.al/notes/encouraging-individual-sovereignty-and-a-healthy-commons/) in the digital, networked age. The first round of development (Jan-April, 2018) is being realised with financial support and development resources from Digipolis at the [The City of Ghent](https://stad.gent).
 
-The initiative is being led by [Aral Balkan](https://ar.al) with invaluable support in Ghent from Martine Delannoy, Chief of Foresight, and Karl-Filip Coenegrachts, Head of Strategy at the City of Ghent.
+The Indienet initiative is being led by [Aral Balkan](https://ar.al) with invaluable support in Ghent from Martine Delannoy, Chief of Foresight, and Karl-Filip Coenegrachts, Head of Strategy at the City of Ghent.
 
-The initiative began in mid-January and is at an exploratory stage.
-
-[Development](https://source.ind.ie/indienet) is being carried out by two small teams: Indie in Cork, Ireland, is working on [Indie Site](/site) and the Smart Citizen Lab at The City of Ghent in Ghent, Belgium is working on [Hallo.gent](/hallo.gent). We are also working with [Combell](https://combell.gent), patron of the .Gent top-level domain on behalf of the City of Ghent.
+[Development](https://source.ind.ie/indienet) began in mid-January and is being carried out by two small teams: Indie in Cork, Ireland, is working on [Indie Site](/site) and our two-person development team at The City of Ghent in Belgium is working on [Hallo.gent](/hallo.gent).
 
 ## Indie Site
 
@@ -27,7 +25,7 @@ We don’t want the City and our industry partners to become smarter about our c
 
 The first step in this mission is to empower the citizens of Ghent with their own place on the Web – their own [Indie Site](/site) at their own domain. This is a node in a federated web-based network where people can communicate with each other, the city, and with the world in general.
 
-To realise this vision, we are working with [Indie](https://ind.ie), our new Smart Citizen Lab, and [Combell](https://combell.gent), patrons of the .Gent top-level domain.
+To realise this vision, we are working with [Indie](https://ind.ie) and The City of Ghent.
 
   * More info: [Hallo.gent](/hallo.gent)
   * Source: [source.ind.ie/indienet/hallo-gent](https://source.ind.ie/indienet/hallo-gent)
