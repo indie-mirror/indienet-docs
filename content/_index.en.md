@@ -4,15 +4,17 @@ title: "Indienet"
 
 # Indienet
 
-Indienet is an initiative led by [Indie](https://ind.ie) to explore the development and deployment of Federated Personal Web Sites (FPWS) to empower people with [individual sovereignty and a healthy commons](https://ar.al/notes/encouraging-individual-sovereignty-and-a-healthy-commons/) in the digital, networked age. The first round of development (Jan-April, 2018) is being realised with financial support and development resources from Digipolis at the [The City of Ghent](https://stad.gent).
+Indienet is an initiative led by [Indie](https://ind.ie) to explore the development and deployment of Federated Personal Web Sites (FPWS) to empower people with [individual sovereignty and a healthy commons](https://ar.al/notes/encouraging-individual-sovereignty-and-a-healthy-commons/) in the digital/networked age. The first round of development (Jan-April, 2018) was realised with financial support and development resources from Digipolis at the [The City of Ghent](https://stad.gent).
 
 The Indienet initiative is being led by [Aral Balkan](https://ar.al) with invaluable support in Ghent from Martine Delannoy, Chief of Foresight, and Karl-Filip Coenegrachts, Head of Strategy at the City of Ghent.
 
-[Development](https://source.ind.ie/indienet) began in mid-January and is being carried out by two small teams: Indie in Cork, Ireland, is working on [Indie Site](/site) and our two-person development team at The City of Ghent in Belgium is working on [Hallo.gent](/hallo.gent).
+The first stage of [development](https://source.ind.ie/indienet) began in mid-January and ended at the end of April, 2018. During this time, a two-person development team at The City of Ghent in Belgium developed [Hallo.gent](/hallo.gent).
+
+Development of [Indie Site](/site) continues at Ind.ie.
 
 ## Indie Site
 
-Design, define, and develop a [Federated Personal Web Site (FPWS)](/site) platform. Development is carried out in the open and is published under the AGPL free software license. Federation is based on the [ActivityPub](/engine/technology-stack/protocol) W3C Recommendation.
+Design, define, and develop a [Federated Personal Web Site (FPWS)](/site) platform. Development is carried out in the open and is published under the AGPL free software license. Federation is planned based on the [ActivityPub](/engine/technology-stack/protocol) W3C Recommendation.
 
   * More info: [Indie Site](/site)
   * Source: [source.ind.ie/indienet/site](https://source.ind.ie/indienet/site)
