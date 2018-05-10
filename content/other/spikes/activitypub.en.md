@@ -1,6 +1,6 @@
 ---
 title: "ActivityPub"
-weight: 10
+weight: 30
 ---
 
 Explore ActivityPub implementation and interoperability (e.g., with Mastodon) for the [Indie Site](/site) project.

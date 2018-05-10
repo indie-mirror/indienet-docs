@@ -13,6 +13,8 @@ But what is a Federated Personal Web Site? Good question. It’s:
 
   * __Web Site:__ apart from the above two qualifications, an FPWS is a regular web site. It is build using web technologies and experienced through a standard web browsers. Indie site functionality can also be experienced via native apps in the future that use its REST And WebSocket APIs.
 
+__May 2018, update:__ While Indie site requires a server component for findability and availability (two areas in which strictly p2p apps struggle), it will eschew the standard client/server model in favour of a peer-to-peer approach using an “offline first” approach to its web client and a replicated datastore. We are currently researching various conflict-free/commutative replicated data types/algorithms. Work on this is currently taking place on the [Spikes](/other/spikes/) section. 
+
 ## Sections
 
 {{% children %}}
