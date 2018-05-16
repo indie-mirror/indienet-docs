@@ -23,13 +23,9 @@ Our spikes will focus on evaluating various CRDT algorithms and, when possible, 
 
 CRDT stands for [conflict-free/commutative replicated datatype](https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type).
 
-### WOOT (and WOOTO, WOOTH, etc.)
+### Contenders
 
-[Aral] My own research in this area dates back six years when I was looking at the WOOT algorithm ([Objective-C implementation](https://github.com/aral/trovedata), talk at (Warning: YouTube link) [Realtime Conf 2013](https://www.youtube.com/watch?v=NSTZ4mIv_wk))
-
-In [Evaluating CRDTs for Real-time Document Editing](https://hal.inria.fr/inria-00629503/document) (PDF) by Mehdi Ahmed-Nacer, et. al, even the original researchers rule out WOOT as a real-world algorithm due to performance/scalability issues. The optimised WOOTO and WOOTH algorithms do not fair much either.
-
-### Logoot
+#### Logoot
 
 The algorithm that comes up on top in the above-mentioned paper is [Logoot](https://hal.archives-ouvertes.fr/inria-00432368/document) (PDF).
 
@@ -44,7 +40,7 @@ JavaScript implementations in the wild:
   * [bnoguchi/logoot](https://github.com/bnoguchi/logoot)
   * [usecanvas/logoot-js](https://github.com/usecanvas/logoot-js) (has a great readme, by the way)
 
-### Automerge
+#### Automerge
 
 Spike: https://source.ind.ie/indienet/spikes/crdt/automerge
 
@@ -55,6 +51,18 @@ https://github.com/automerge/automerge/issues/89
 
 In its current state, I’m not sure we can use this. To have a conflict-free JSON structure would be amazing but it currently comes with a lot of overhead. There’s nothing we want to achieve that we cannot using a linear structure such as the ones used by more traditional CRDTs like Logoot. My next spike will be to explore this option.
 
+### Ruled out
+
+The following algorithms/approaches have been evaluated and ruled out:
+
+#### WOOT (and WOOTO, WOOTH, etc.)
+
+[Aral] My own research in this area dates back six years when I was looking at the WOOT algorithm ([Objective-C implementation](https://github.com/aral/trovedata), talk at (Warning: YouTube link) [Realtime Conf 2013](https://www.youtube.com/watch?v=NSTZ4mIv_wk))
+
+In [Evaluating CRDTs for Real-time Document Editing](https://hal.inria.fr/inria-00629503/document) (PDF) by Mehdi Ahmed-Nacer, et. al, even the original researchers rule out WOOT as a real-world algorithm due to performance/scalability issues. The optimised WOOTO and WOOTH algorithms do not fair much either.
+
+
+
 ## Resources
 
-* [CRDT Playground](https://github.com/archagon/crdt-playground)
+* [Data Laced with History: Causal Trees & Operational CRDTs](http://archagon.net/blog/2018/03/24/data-laced-with-history/): excellent, contemporary review of the state of the art in CRDTs by Alexei. See the References section for links to further documents. 
