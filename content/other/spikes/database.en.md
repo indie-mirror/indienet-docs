@@ -25,10 +25,16 @@ We need a database choice to support the “offline first”/p2p nature of indie
 Spike:
 
   * [ ] NanoSQL (in Node: with LevelDB store)
-  * [ ] Dexie.js (in Node: with [IndexedDBShim](https://github.com/axemclion/IndexedDBShim) and SQLite store)
+  * [x] Dexie.js (in Node: with [IndexedDBShim](https://github.com/axemclion/IndexedDBShim) and SQLite store)
 
-Test:
+## Spikes
 
-  * Performance
-  * Easy of use
-  * Fitness for purpose
+### Dexie.js in Node with IndexedDBShim
+
+https://source.ind.ie/indienet/spikes/databases/dexie-node
+
+## Tests:
+
+  * [ ] Performance
+  * [ ] Easy of use
+  * [ ] Fitness for purpose
